@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccccc"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <Button
+        android:id="@+id/popup_base_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_corners_selector"
+        android:text="@string/register_takephoto"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <Button
+        android:id="@+id/popup_base_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_corners_selector"
+        android:text="@string/register_imgs"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <Button
+        android:id="@+id/popup_base_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_corners_selector"
+        android:text="@string/register_avatar"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <Button
+        android:id="@+id/popup_base_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_corners_selector"
+        android:text="@string/btn_cancel"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>

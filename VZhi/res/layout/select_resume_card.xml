@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.xiaobukuaipao.vzhi.view.Card xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/candidate_margin_10dp" >
+
+    <LinearLayout
+        android:id="@+id/candidate_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.xiaobukuaipao.vzhi.view.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="2dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/refresh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/general_color_cccccc"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <RelativeLayout
+                android:id="@+id/name_cityexpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <TextView
+                    android:id="@+id/nick_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/name"
+                    android:layout_toRightOf="@id/name"
+                    android:text="@string/nick_guide"
+                    android:textColor="@color/base_interface_color"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/city_expr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/name"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/name"
+                    android:textColor="@color/general_gray_999999"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_cityexpr"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/general_gray_999999"
+                android:textSize="@dimen/text_size_14sp" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_info_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_weight"
+        android:layout_below="@id/candidate_info"
+        android:background="@color/divider_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/job_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_info_1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/applied_position"
+            android:textColor="@color/general_gray_999999"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/apply_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:textColor="@color/general_color_333333"
+            android:textSize="@dimen/text_size_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_info_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_weight"
+        android:layout_below="@id/job_position"
+        android:layout_marginTop="15dp"
+        android:background="@color/divider_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/self_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_info_2"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/self_introduce_str"
+            android:textColor="@color/general_gray_999999"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/postscript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:textColor="@color/general_color_333333"
+            android:textSize="@dimen/text_size_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/job_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_introduce"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/title_job_experience"
+            android:textColor="@color/general_gray_999999"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_corp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_color_333333"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/experience_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/general_color_cccccc"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edu_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/job_experience"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/title_edu_background"
+            android:textColor="@color/general_gray_999999"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_color_333333"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/education_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/general_color_cccccc"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_info_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_weight"
+        android:layout_below="@id/edu_experience"
+        android:layout_marginTop="15dp"
+        android:background="@color/divider_line_gray" />
+
+    <TextView
+        android:id="@+id/skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_info_3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/base_interface_color"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/image_view"
+        android:src="@drawable/inter_tag"
+        android:visibility="invisible" />
+
+</com.xiaobukuaipao.vzhi.view.Card>

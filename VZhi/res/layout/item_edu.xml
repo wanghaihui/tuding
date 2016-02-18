@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-5dp"
+    android:layout_marginRight="-5dp"
+    android:background="@drawable/bg_corners_selector"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp" >
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/register_edu_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:displayCenter = "false"
+        custom:displayArrow="false" />
+
+    <include layout="@layout/form_item_bootom_line" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/register_edu_school_degree"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:displayArrow="true" />
+
+    <include layout="@layout/form_item_bootom_line" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/register_edu_major"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:displayArrow="false"
+        custom:displayCenter = "false"
+        custom:itemTextLeftTitle="@string/register_jobexp_time" />
+
+</LinearLayout>

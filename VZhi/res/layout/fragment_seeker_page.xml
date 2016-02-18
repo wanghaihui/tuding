@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+        android:id="@+id/good_seeker_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/layout_margin_14dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/empty2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/image_view"
+            android:src="@drawable/empty" />
+    </RelativeLayout>
+
+</LinearLayout>

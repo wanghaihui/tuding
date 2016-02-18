@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jobposition_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/position_menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@color/base_interface_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dp"
+            android:paddingRight="96.0dp"
+            android:singleLine="true" />
+
+        <FrameLayout
+            android:id="@+id/menu_bar_back_btn_layout"
+            android:layout_width="@dimen/action_common_height"
+            android:layout_height="@dimen/action_common_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:background="@drawable/btn_return_bg_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/btn_return_img_selector" />
+        </FrameLayout>
+
+        <com.xiaobukuaipao.vzhi.widget.VerifyUserAvatar
+            android:id="@+id/menu_bar_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="1dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/position_menu_bar"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/crop_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+                    android:id="@+id/logo_corp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="@dimen/layout_margin_3dp"
+                    android:contentDescription="@string/image_view"
+                    android:scaleType="centerCrop"
+                    app:riv_border_color="@color/bg_light_gray"
+                    app:riv_border_width="1px"
+                    app:riv_corner_radius="2dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/logo_corp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/logo_corp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        android:id="@+id/recruit_corp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_18sp" />
+
+                    <TextView
+                        android:id="@+id/recruit_corp_ltd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/general_color_888888"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+
+                <com.xiaobukuaipao.vzhi.view.LinesTextView
+                    android:id="@+id/corp_benefits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo_corp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- 企业名片 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/vertical_lines"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/corp_card"
+                    android:textColor="@color/general_color_1A2138"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <TextView
+                    android:id="@+id/corp_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/corp_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/corp_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/corp_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/corp_homepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <!-- 企业介绍 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/vertical_lines"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/corp_introduce"
+                    android:textColor="@color/general_color_1A2138"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <TextView
+                    android:id="@+id/corp_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/general_color_999999"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <!-- 全部职位 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/vertical_lines"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/corp_all_position"
+                    android:textColor="@color/general_color_1A2138"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <com.xiaobukuaipao.vzhi.view.ListViewForScrollView
+                    android:id="@+id/corp_position_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="1px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:duplicateParentState="true"
+    android:background="@drawable/bg_layout_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/form_item_view_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="@dimen/form_item_middle_margin_weight"
+        android:ellipsize="end"
+        android:maxEms="25"
+        android:minWidth="50.0dp"
+        android:singleLine="true"
+        android:textColor="@color/font_label"
+        android:textSize="@dimen/font_user_set" />
+
+    <TextView
+        android:id="@+id/user_setting_item_view_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edittext"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:hint="@string/general_tips_add"
+        android:maxEms="18"
+        android:minEms="3"
+        android:minWidth="50dp"
+        android:singleLine="true"
+        android:textColor="@color/general_color_1A2138"
+        android:textColorHint="@color/general_color_999999"
+        android:textSize="@dimen/font_user_label" />
+
+    <ImageView
+        android:id="@+id/form_item_view_arrow"
+        android:layout_width="20.0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/group_item_arrow" />
+
+    <com.xiaobukuaipao.vzhi.widget.A5EditText
+        android:id="@+id/user_setting_item_view_edit"
+        style="@style/CommonTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:layout_weight="1"
+        android:ems="10"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textSize="@dimen/font_user_label"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/form_item_choose_status"
+        android:layout_width="20.0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="70dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="right"
+        android:src="@drawable/check_box_blue"
+        android:visibility="gone" />
+
+</LinearLayout>

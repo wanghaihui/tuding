@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dip" >
+
+    <!-- android:background="@drawable/general_dynamic_bg" -->
+
+    <TextView
+        android:id="@+id/info_input_title"
+        style="@style/CommonTextViewStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin_3dp" />
+
+    <include
+        android:layout_width="@dimen/border_weight"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/info_input_title"
+        layout="@layout/vertical_line" />
+
+    <TextView
+        android:id="@+id/info_input_edit"
+        style="@style/CommonTextViewStyle"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/info_input_jump" />
+
+    <com.xiaobukuaipao.vzhi.widget.A5EditText
+        android:id="@+id/info_input_edittv"
+        style="@style/CommonTextViewStyle"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/info_input_jump"
+        android:ems="10"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/info_input_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin_3dp"
+        android:layout_marginRight="@dimen/layout_margin_3dp"
+        android:contentDescription="@string/right_jump_desc"
+        android:src="@drawable/common_icon_arrow_right" />
+
+</RelativeLayout>

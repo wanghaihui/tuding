@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color" >
+
+    <com.xiaobukuaipao.vzhi.view.ClipImageView
+        android:id="@+id/src_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.xiaobukuaipao.vzhi.view.ClipRectView
+        android:id="@+id/clipview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_return_bg_selector"
+        android:contentDescription="@string/image_view"
+        android:padding="10dp"
+        android:src="@drawable/rotate" />
+
+    <include layout="@layout/menu_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color" >
+
+    <LinearLayout
+        android:id="@+id/candidate_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/candidate_margin_45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/base_interface_color" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/candidate_interest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_return_bg_selector"
+                android:gravity="center"
+                android:text="@string/action_interest"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/candidate_interview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_return_bg_selector"
+                android:gravity="center"
+                android:text="@string/action_interview"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/general_back_color" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/candidate_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_return_bg_selector"
+                android:gravity="center"
+                android:text="@string/action_chat"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/candidate_bottom_layout" >
+
+        <com.xiaobukuaipao.vzhi.flingswipe.CardContainer
+            android:id="@+id/candidate_card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            app:rotation_degrees="15.5" />
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.vzhi.view.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBarCircularIndeterminate"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:background="#1E88E5"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/candidate_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/candidate_already_disposed"
+        android:textColor="@color/general_color_888888"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

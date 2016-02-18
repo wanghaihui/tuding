@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp" >
+
+    <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/general_user_avatar"
+        app:riv_corner_radius="2dp"
+        app:border_width="1px" />
+
+</LinearLayout>

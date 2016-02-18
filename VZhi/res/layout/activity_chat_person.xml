@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize" >
+
+    <RelativeLayout
+        android:id="@+id/chat_menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/base_interface_color"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true" />
+
+        <FrameLayout
+            android:id="@+id/menu_bar_back_btn_layout"
+            android:layout_width="@dimen/action_common_height"
+            android:layout_height="@dimen/action_common_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:background="@drawable/btn_return_bg_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/btn_return_img_selector" />
+        </FrameLayout>
+
+        <com.xiaobukuaipao.vzhi.view.RoundedImageView
+            android:id="@+id/menu_bar_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:src="@drawable/personal_setting"
+            android:textColor="@color/font_on_dark"
+            android:textSize="@dimen/font_button"
+            app:riv_border_width="0dp"
+            app:riv_oval="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_sender"
+        android:layout_below="@+id/chat_menu_bar"
+        android:orientation="vertical" >
+
+        <!--
+        <com.xiaobukuaipao.vzhi.view.xlist.XListView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="normal" />
+        -->
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/general_back_color"
+            android:transcriptMode="alwaysScroll"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7" >
+
+            <ListView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                android:transcriptMode="alwaysScroll" />
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/general_color_F2F2F2"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/general_color_F2F2F2"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:id="@+id/send_add_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/chat_add_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/chat_plus"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/chat_send_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_corners_button"
+                    android:padding="2dp"
+                    android:text="@string/general_send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/chat_input_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/send_add_layout"
+                android:background="@drawable/bg_corners"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:padding="6dp"
+                android:singleLine="false"
+                android:textSize="@dimen/text_size_16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+		        <LinearLayout
+		            android:id="@+id/layout_emo"
+		            android:layout_width="match_parent"
+		            android:layout_height="120dp"
+		            android:orientation="vertical"
+		            android:visibility="gone" >
+		
+		            <android.support.v4.view.ViewPager
+		                android:id="@+id/pager_emo"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content" />
+		        </LinearLayout>
+            -->
+
+            <include
+                android:id="@+id/layout_add"
+                layout="@layout/include_chat_add"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.xiaobukuaipao.vzhi.view.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBarCircularIndeterminate"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:background="#1E88E5"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/applied_publish_position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_menu_bar_id"
+        layout="@layout/menu_bar" />
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_publish_empty"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+        android:id="@+id/published_positions_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

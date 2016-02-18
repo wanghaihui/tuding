@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+    <string name="app_name">jobooking</string>
+    <string name="website">www.jobooking.cn</string>
+   
+    <string name="user_guide_phone_str">please input phone number</string>
+   
+    <string name="user_guide_education_jump">跳过</string>
+    <string name="user_guide_job_right">找职位</string>
+    
+    <string name="register_nickname_button_title">完成</string>
+    
+    <string name="user_guide_job_company_menu">公司名称</string>
+    <string name="user_guide_nick_name_menu">填写昵称</string>
+    <string name="user_guide_choose_menu">选择身份</string>
+    <string name="user_profile_menu">用户简历</string>
+    
+    <string name="user_guide_gender_man">男</string>
+    <string name="user_guide_gender_girl">女</string>
+    
+    <string name="register_choose_gender">选择性别</string>
+    
+    <string name="register_place">居住地点</string>
+
+    <string name="location_hint">输入城市名或首字母</string>
+    <string name="location_loading">定位城市</string>
+    <string name="location_loaded">定位的城市</string>
+    
+    <string name="china_86">中国  +86</string>
+    <string name="inputPhoneNumber">请填写手机号码</string>
+    
+    <string name="verify_code_prompt">我们发送了验证码到你的手机：</string>
+    <string name="input_verify_code">请输入验证码</string>
+    <string name="retry_send_num">重新获取(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="retry_send">重新获取</string>
+    <string name="send_verify_code">发送验证码</string>
+    
+    <string name="title_job_objective">求职意向</string>
+    <string name="default_job_objective_str">待完善</string>
+    <string name="job_objective_category">行业方向</string>
+    <string name="job_objective_intention_pos">意向岗位</string>
+    <string name="job_objective_salary">期望月薪</string>
+    <string name="job_objective_company_type">公司类型</string>
+    <string name="job_objective_intention_city">目标城市</string>
+    <string name="job_objective_jobstate">求职心态</string>
+    <string name="job_objective_job_timerange">工作时间</string>
+    
+    <string name="right_jump_desc">右侧跳转描述</string>
+    
+    <string name="main_navigation_recruit">求职招聘</string>
+    <string name="main_navigation_chat">对话</string>
+    <string name="main_navigation_person">我</string>
+    
+    <string name="start_time">开始时间</string>   
+    <string name="end_time">结束时间</string>
+    
+    <string name="title_password_setting">密码设置</string>
+    <string name="pword_setting_tip">设置密码后，你可以用手机号+密码登录客户端和网站</string>
+    <string name="password_setting_phone">手机号</string>
+    <string name="password_setting_pword">密  码</string>
+    <string name="password_setting_pword_confirm">确认密码</string>
+    
+    <string name="title_hr_info">基本信息</string>
+    <string name="title_photo_picker">照片</string>
+    <string name="hr_info_portrait">头像</string>
+    <string name="hr_info_name">真实姓名</string>
+    <string name="hr_info_nickname">昵称</string>
+    <string name="hr_info_gender">性别</string>
+    <string name="gender_man">男</string>
+    <string name="gender_woman">女</string>
+    <string name="personal_info_age">年龄</string>
+    <string name="personal_info_expr">工作经验</string>
+    <string name="personal_info_location">所在地</string>
+    <string name="personal_info_mobile">手机</string>
+    <string name="personal_info_email">邮箱</string>
+
+    <string name="title_company_selected">完善公司全称</string>
+    
+    <string name="certify_str">认证</string>
+    <string name="identity_str_ceruser">用户</string>
+    <string name="identity_str_user">普通用户</string>
+    <string name="identity_str_hr">HR</string>
+    <string name="identity_str_hunt">猎头</string>
+    
+    <string name="job_apply_button_name">申请职位</string>
+    
+    <string name="user_guide_school_time">起止时间</string>
+    
+    <string name="common_button_name">保存</string>
+    
+    <string name="job_experience_desc_tip">请完善上述工作经历的描述</string>
+    <string name="user_guide_job_desc_center">完善工作描述</string>
+    <string name="common_button_add_job_experience">新增工作经历</string>
+    <string name="user_guide_job_detail_center">工作经历</string>
+    
+    <string name="candidate_interest_str">感兴趣</string>
+    <string name="candidate_interview_str">约面试</string>
+    <string name="candidate_chat_str">聊一聊</string>
+    
+    <string name="loading">正在加载</string>
+    <string name="logingin">正在登录</string>
+    
+    <string name="interview_has_send">面试邀请已发送</string>
+    <string name="interview_has_accepted">已接受面试邀请，面试时间：</string>
+    <string name="interview_has_ignored">已忽略你的面试邀请</string>
+    
+    <string name="person_chat_member_card">个人名片</string>
+    <string name="black_person">加入黑名单</string>
+    
+    <string name="pull_to_refresh_pull_label">Pull to refresh</string>
+    <string name="pull_to_refresh_release_label">Release to refresh</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+    <string name="image_view">image view desc</string>
+    
+    <!-- DatePicker String -->
+    <!-- Preference framework strings. -->
+    <string name="cancel">Cancel</string>
+
+    <!-- The title of the date picker dialog. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_dialog_title">Set date</string>
+    <!-- Name of the button in the date/time picker to accept the date/time change -->
+    <string name="date_time_set">Set</string>
+    <!-- Name of the button in the date/time picker to accept the date/time change -->
+    <string name="date_time_done">确定</string>
+    <string name="date_time_cancel">取消</string>
+
+    <!-- DatePicker - accessibility support -->
+    <!-- Description of the button to increment the DatePicker's month value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_increment_month_button">Increment month</string>
+    <!-- Description of the button to decrement the DatePicker's month value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_decrement_month_button">Decrement month</string>
+    <!-- Description of the button to increment the DatePicker's day value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_increment_day_button">Increment day</string>
+    <!-- Description of the button to decrement the DatePicker's day value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_decrement_day_button">Decrement day</string>
+    <!-- Description of the button to increment the DatePicker's year value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_increment_year_button">Increment year</string>
+    <!-- Description of the button to decrement the DatePicker's year value. [CHAR LIMIT=NONE] -->
+    <string name="date_picker_decrement_year_button">Decrement year</string>
+</resources>

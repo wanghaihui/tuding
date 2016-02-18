@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        layout="@layout/menu_bar" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/setting_newmsg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="@dimen/layout_margin_20dp"
+        android:padding="1px"
+        android:visibility="gone"
+        app:itemTextLeftTitle="@string/setting_newmsg_str" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/setting_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/menu_bar"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="@dimen/layout_margin_20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:displayCenter="false"
+        app:itemTextLeftTitle="@string/setting_account_str" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/setting_private_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/setting_account_layout"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:displayCenter="false"
+        app:itemTextLeftTitle="@string/setting_private_str" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/setting_about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/setting_private_layout"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:displayCenter="false"
+        app:itemTextLeftTitle="@string/setting_about_str" />
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/setting_update_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/setting_about_layout"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:displayArrow="false"
+        app:itemTextLeftTitle="@string/setting_update_str" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_corners_quit_button"
+        android:gravity="center"
+        android:text="@string/setting_logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp" />
+
+</RelativeLayout>

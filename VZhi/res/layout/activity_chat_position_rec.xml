@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize" >
+
+    <include layout="@layout/menu_bar" />
+
+    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+        android:id="@+id/rec_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="CustomLayoutLP">
+        <attr name="android:layout_gravity" />
+        <attr name="layout_position">
+            <enum name="middle" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="A5EditText">
+        <attr name="isError" format="boolean" />
+        <attr name="isChild" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="UserProfileTipView">
+        <attr name="userTip1" format="string" />
+        <attr name="userTip2" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="FormItemByLineView">
+        <attr name="itemTextLeftTitle" format="string" />
+        <attr name="displayLeftLable" format="boolean" />
+        <attr name="centerTip" format="string" />
+        <attr name="displayCenter" format="boolean" />
+        <attr name="displayArrow" format="boolean" />
+        <attr name="rightMoreLeft" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="FormItemByLineLayout">
+        <attr name="leftLabel" format="string" />
+        <attr name="dispLabel" format="boolean" />
+        <attr name="rightTip" format="string" />
+        <attr name="dispTip" format="boolean" />
+        <attr name="dispArrow" format="boolean" />
+        <attr name="dispCbox" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!-- The CalendarView style. -->
+    <attr name="calendarViewStyle" format="reference" />
+
+    <declare-styleable name="CalendarView">
+
+        <!-- The first day of week according to {@link java.util.Calendar}. -->
+        <attr name="cv_firstDayOfWeek" format="integer" />
+        <!-- Whether do show week numbers. -->
+        <attr name="cv_showWeekNumber" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="cv_minDate" format="string" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="cv_maxDate" format="string" />
+        <!-- The number of weeks to be shown. -->
+        <attr name="cv_shownWeekCount" format="integer" />
+        <!-- The background color for the selected week. -->
+        <attr name="cv_selectedWeekBackgroundColor" format="color|reference" />
+        <!-- The color for the dates of the focused month. -->
+        <attr name="cv_focusedMonthDateColor" format="color|reference" />
+        <!-- The color for the dates of an unfocused month. -->
+        <attr name="cv_unfocusedMonthDateColor" format="color|reference" />
+        <!-- The color for the week numbers. -->
+        <attr name="cv_weekNumberColor" format="color|reference" />
+        <!-- The color for the separator line between weeks. -->
+        <attr name="cv_weekSeparatorLineColor" format="color|reference" />
+        <!-- Drawable for the vertical bar shown at the beginning and at the end of the selected date. -->
+        <attr name="cv_selectedDateVerticalBar" format="reference" />
+        <!-- The text appearance for the week day abbreviation of the calendar header. -->
+        <attr name="cv_weekDayTextAppearance" format="reference" />
+        <!-- The text appearance for the calendar dates. -->
+        <attr name="cv_dateTextAppearance" format="reference" />
+        <attr name="cv_dividerHorizontal" format="reference" />
+    </declare-styleable>
+
+    <!-- Framework styleables are not public. -->
+    <declare-styleable name="TextAppearanceCompatStyleable">
+        <attr name="android:textSize" />
+    </declare-styleable>
+    <!-- The TimePicker style. -->
+    <attr name="timePickerStyle" format="reference" />
+     <declare-styleable name="TimePicker">
+        <!-- @hide The layout of the time picker. -->
+        <attr name="internalLayout" />
+    </declare-styleable>
+    
+    <!-- The DatePicker style. -->
+    <attr name="datePickerStyle" format="reference" />
+
+    <declare-styleable name="DatePicker">
+
+        <!--
+             The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.}
+        -->
+        <attr name="dp_startYear" format="integer" />
+        <!--
+             The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.}
+        -->
+        <attr name="dp_endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="dp_spinnersShown" format="boolean" />
+        <!-- Whether the calendar view is shown. -->
+        <attr name="dp_calendarViewShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="dp_minDate" format="string" />
+        <!-- The maximal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="dp_maxDate" format="string" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="dp_internalLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!-- flingswipe -->
+    <declare-styleable name="SwipeFlingAdapterView">
+        <attr name="SwipeFlingStyle" format="reference" />
+        <attr name="rotation_degrees" format="float" />
+        <attr name="min_adapter_stack" format="integer" />
+        <attr name="max_visible" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="BlurView">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <!-- used to set the minTextSize via xml -->
+	<attr name="autoScaleTextViewStyle" format="reference" />
+    <declare-styleable name="AutoScaleTextView">
+	    <attr name="minTextSize" format="dimension" />
+	</declare-styleable>
+</resources>

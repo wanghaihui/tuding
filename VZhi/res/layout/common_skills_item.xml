@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/intent_margin_25dp"
+	android:background="@drawable/rectangle_circle_corner_orange">
+    
+    <!-- android:textSize="@dimen/font_large" -->
+    <com.xiaobukuaipao.vzhi.view.AutoResizeTextView
+		android:id="@+id/job_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:maxLines="1"
+        android:padding="1dip"
+        android:layout_centerVertical="true"
+        android:textColor="@color/general_color_FF9900" />
+	
+</RelativeLayout>

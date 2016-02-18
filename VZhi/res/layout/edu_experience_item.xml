@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout_selector"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/person_profile_20dp"
+    android:paddingRight="@dimen/person_profile_20dp" >
+
+    <TextView
+        android:id="@+id/edu_university_major_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_2dp"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/edu_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/general_color_999999"
+        android:textSize="@dimen/text_size_12sp" />
+
+</LinearLayout>

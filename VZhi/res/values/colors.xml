@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="register">#0099ff</color>
+    <color name="tips">#ff9900</color>
+    <color name="pswd_setting_phone">#999999</color>
+    <color name="font_button_pressed">#ff9dbbef</color>
+    <color name="font_button_normal">#ff396fc9</color>
+    <color name="font_top_title">#ff333333</color>
+    <color name="bg_light_gray">#ffefeff4</color>
+    <color name="bg_light_gray_pressed">#cccccccc</color>
+
+    <item name="top_btn_bg" type="color">@android:color/transparent</item>
+    <item name="font_on_dark" type="color">@android:color/white</item>
+
+    
+    <color name="bg_red">#ffff0000</color>
+    <color name="bg_blue">#FF2CC0EB</color>
+    <color name="bg_pink">#FFFFC0CB</color>
+    <color name="font_gray">#ff858585</color>
+    <color name="font_black_666">#ff666666</color>
+    <color name="font_black_999">#ff999999</color>
+    <color name="border">#ffcecece</color>
+    <color name="font_clickable">#ff80a5e2</color>
+    <color name="font_un_clickable">#ff999999</color>
+    <color name="font_tips">#ffa2a6a7</color>
+    <color name="bg_form_item_pressed">#fffcfcfc</color>
+    <color name="bg_form_item_normal">#fff9f9f8</color>
+    <color name="font_label">#ff333333</color>
+    <color name="main_bg">#eee</color>
+    <color name="bg">#f4f4f4</color>
+    <color name="green">#ff32b9aa</color>
+    <color name="info_line">#e3e1e1</color>
+    <color name="error_background">#666666</color>
+    <color name="error_warn">#999999</color>
+
+    <!-- basic color -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="orange">#CCFF9900</color>
+    <color name="semi_transparent">#7f000000</color>
+    <color name="chat_background">@color/window_bg</color>
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="color_bai">#ffffffff</color>
+    <color name="text_shadow_color">#66000000</color>
+    <color name="tab_main_bg">#fcfcfc</color>
+    <color name="font_content">#ffaaaaaa</color>
+    <color name="job_apply_bg">#f2f2f2</color>
+    <color name="job_apply_button_bg">#dcf9cc</color>
+    <color name="black1">#ff333333</color>
+    <color name="black2">#ff666666</color>
+    <color name="citylist_divider">#ffd8d8d8</color>
+    <color name="black3">#ff999999</color>
+    <color name="light_green">#ffc9eae8</color>
+    <color name="background_color">#fff0f0f0</color>
+    <color name="notice_number">#ffDB7D45</color>
+    <color name="chat_group_list_bg">#ffEBE5DB</color>
+    <color name="message_list_divider">#ffD8D8D8</color>
+    <color name="chat_list_bg">#ffEBE4D9</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="divider_line_gray">#FFCCCCCC</color>
+    <color name="divider_line_white">#FFFFFFFF</color>
+
+    <color name="sider_default_color">#88cccccc</color>
+    <!-- Position List -->
+    <!-- FF 完全不透明  00 完全透明 -->
+    <color name="general_gray_999999">#FF999999</color>
+    <color name="general_position_title">#FF1A2138</color>
+    <color name="salary">#FFFF9900</color>
+
+    <!-- 头像 border color -->
+    <color name="boy_border_color">#FF2CC0EB</color>
+    <color name="girl_border_color">#FFFF9999</color>
+
+    <!-- 整体背景色 -->
+    <color name="general_back_color">#FFEDF0F5</color>
+    <!-- ActionBar 背景色 -->
+    <color name="base_interface_color">#FF2CC0EB</color>
+    
+    <!-- Main Bottom Bar 背景色 -->
+    <color name="bottom_bar_back_color">#FFF2F2F2</color>
+    <!-- register common -->
+    <color name="common_button">#e4e4e4</color>
+    <!-- 对话框背景色 -->
+    <color name="dialog_background">#aa000000</color>
+    <!-- 绿色 -->
+    <color name="general_color_green">#FF44EE33</color>
+    
+    <!-- 灰色 -->
+    <color name="general_color_333333">#FF333333</color>
+    <color name="general_color_666666">#FF666666</color>
+    <color name="general_color_e4e4e4">#FFe4e4e4</color>
+    <color name="general_color_888888">#FF888888</color>
+    <color name="general_color_a3a3a3">#FFa3a3a3</color>
+    <color name="general_color_cccccc">#FFCCCCCC</color>
+    <!-- 桔色 -->
+    <color name="general_color_FF9900">#FFFF9900</color>
+    
+    <!-- 候选人底部颜色 灰色 -->
+	<color name="general_color_4F5466">#4F5466</color>
+	<color name="general_color_999999">#999999</color>
+	<color name="general_color_F5F5EB">#F5F5EB</color>
+	<color name="general_color_EDEDF8">#EDEDF8</color>
+	<color name="general_color_1A2138">#1A2138</color>
+	<color name="general_color_FF6666">#FF6666</color>
+	
+	<!-- 红色 -->
+	<color name="general_color_red">#FF0000</color>
+	<color name="general_color_light_red">#FFFF6666</color>
+	<color name="general_color_dark_red">#FFFF3333</color>
+	
+	<color name="general_color_blue">#CC0099FF</color>
+    <color name="general_color_blue2">#FF0099CC</color>
+    
+    <color name="general_color_blue3">#FF4CB7FF</color>
+    <!-- 白色透明度 -->
+    <color name="general_color_white_shade">#66FFFFFF</color>
+    <!-- 黑色透明度 -->
+    <color name="general_color_black_shade">#66000000</color>
+    
+    <!-- 聊天输入框 -->
+    <color name="general_color_F2F2F2">#F2F2F2</color>
+    
+    <color name="general_color_abddee">#ABDDEE</color>
+    <color name="general_color_f8b62c">#F8B62C</color>
+    <color name="general_color_afcd53">#AFCD53</color>
+    
+    <!-- 个人信息 菜单栏 -->
+    <color name="general_color_0698cb">#FF0698CB</color>
+    
+    <!-- 粉色 -->
+    <color name="general_color_FF9999">#FF9999</color>
+    
+    <color name="adp_background_holo_dark">#ff000000</color>
+    <color name="adp_background_holo_light">#fff3f3f3</color>
+    <color name="adp_bright_foreground_holo_dark">@color/adp_background_holo_light</color>
+    <color name="adp_bright_foreground_holo_light">@color/adp_background_holo_dark</color>
+    <color name="adp_bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="adp_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+
+    <!-- A light Holo shade of blue -->
+    <color name="adp_holo_blue_light">#ff33b5e5</color>
+    <!-- 招人才中的,技能标签颜色 -->
+    <color name="seeker_skills">#ff5a7f9b</color>
+    <!-- 陌生人收件箱 回复的颜色 -->
+    <color name="stranger_answer_color">#ff5a7f9b</color>
+    
+    <color name="general_color_99FFFFFF">#99FFFFFF</color>
+</resources>

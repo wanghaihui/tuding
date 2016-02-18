@@ -1,0 +1,25 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-5dp"
+    android:layout_marginRight="-5dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/general_back_color"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/register_edu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/bg_corners"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1px"
+        android:focusable="true"
+        android:listSelector="@drawable/bg_layout_selector"
+        android:paddingTop="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.xiaobukuaipao.vzhi.view.Card xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/position_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/candidate_margin_5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/candidate_margin_5dp"
+                android:textColor="@color/base_interface_color"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/position"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/general_color_999999"
+                android:textSize="@dimen/text_size_12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/basic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/position_layout"
+        android:padding="@dimen/candidate_margin_5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:contentDescription="@string/image_view"
+                    android:scaleType="centerCrop"
+                    app:riv_border_color="@color/bg_light_gray"
+                    app:riv_border_width="2px"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    app1:riv_corner_radius="2dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/avatar"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/expr_and_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_toRightOf="@id/avatar"
+                    android:textColor="@color/general_color_666666"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_weight"
+                android:layout_marginTop="@dimen/candidate_margin_5dp"
+                android:background="@color/divider_line_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/candidate_margin_20dp" >
+
+                <RelativeLayout
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/position_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/title_job_experience"
+                        android:textColor="@color/general_color_999999"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/position_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/position_title"
+                        android:layout_marginLeft="@dimen/candidate_margin_70dp"
+                        android:textSize="@dimen/text_size_14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/edu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/position"
+                    android:layout_marginTop="@dimen/candidate_margin_10dp" >
+
+                    <TextView
+                        android:id="@+id/edu_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/position_title"
+                        android:text="@string/title_edu_background"
+                        android:textColor="@color/general_color_999999"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/edu_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/edu_title"
+                        android:layout_marginLeft="@dimen/candidate_margin_70dp"
+                        android:textSize="@dimen/text_size_14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_weight"
+        android:layout_below="@id/basic_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/divider_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_divider"
+        android:padding="@dimen/candidate_margin_5dp" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/candidate_margin_20dp"
+            android:layout_marginRight="@dimen/candidate_margin_20dp"
+            android:text="未读"
+            android:textColor="#33cc33"
+            android:textSize="@dimen/text_size_12sp" />
+    </RelativeLayout>
+
+</com.xiaobukuaipao.vzhi.view.Card>

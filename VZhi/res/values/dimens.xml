@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_field_height">48dp</dimen>
+    <dimen name="text_field_padding">16dp</dimen>
+    <dimen name="text_field_space">8dp</dimen>
+    <dimen name="tips_line_width">2dp</dimen>
+    <dimen name="number_pick_min_width">60dp</dimen>
+    <dimen name="height_top_tab_bar">50.0dp</dimen>
+    <dimen name="font_button">16.0sp</dimen>
+    <dimen name="resume_font">16.0sp</dimen>
+    <dimen name="register_font_button">20.0sp</dimen>
+    <dimen name="font_top_title">18.0sp</dimen>
+    <dimen name="font_large">20.0sp</dimen>
+    <dimen name="font_normal">14.0sp</dimen>
+    <dimen name="font_user_set">18.0sp</dimen>
+    <dimen name="font_user_label">15.0sp</dimen>
+    <dimen name="title_size">22sp</dimen>
+    <dimen name="font_bottom_button">18.0sp</dimen>
+    <dimen name="border_weight">1.0px</dimen>
+    <dimen name="height_bottom_button">50.0dp</dimen>
+    <dimen name="font_label">14.0sp</dimen>
+    <dimen name="font_small">11.0sp</dimen>
+    <dimen name="form_item_middle_margin_weight">20.0dp</dimen>
+    <dimen name="job_desc_margin_weight">10.0dp</dimen>
+    <dimen name="height_image_normal">55.0dp</dimen>
+    <dimen name="height_image_small">36.0dp</dimen>
+    <dimen name="width_image_small">36.0dp</dimen>
+    <dimen name="job_detail_margin_top">10dp</dimen>
+    <dimen name="job_detail_margin_sma_top">3dp</dimen>
+    <dimen name="job_detail_content_margin_top">15dp</dimen>
+    <dimen name="text_size_h5">16.0sp</dimen>
+    <dimen name="text_size_h2">22.0sp</dimen>
+    <dimen name="text_size_h4">16.0sp</dimen>
+    <dimen name="text_size_h1">32.0sp</dimen>
+    <dimen name="city_align_left_size">8.0dp</dimen>
+    <dimen name="city_align_right_size">20.0dp</dimen>
+    <dimen name="register_menu_margin_top">15dp</dimen>
+    <dimen name="button_margin">14dp</dimen>
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="webview_progress">3px</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!-- 图片数据 -->
+    <dimen name="image_border">1dp</dimen>
+    <dimen name="image_radius">10dp</dimen>
+    <dimen name="image_width">48dp</dimen>
+    <dimen name="image_height">48dp</dimen>
+    <dimen name="layout_margin_30dp">30dp</dimen>
+    <dimen name="layout_margin_15dp">15dp</dimen>
+    <dimen name="layout_margin_2dp">2dp</dimen>
+    <dimen name="layout_margin_5dp">5dp</dimen>
+    <dimen name="layout_margin_7dp">7dp</dimen>
+    <dimen name="layout_margin_8dp">8dp</dimen>
+    <dimen name="layout_margin_6dp">6dp</dimen>
+
+    <!-- Android Material Standard Design -->
+    <dimen name="layout_margin_3dp">3dp</dimen>
+    <dimen name="layout_margin_16dp">6dp</dimen>
+    <dimen name="layout_margin_14dp">7dp</dimen>
+    <dimen name="layout_margin_20dp">20dp</dimen>
+    <dimen name="layout_margin_10dp">10dp</dimen>
+    
+    
+    <!-- 主页列表 灰色内边距 -->
+    <dimen name="layout_margin_40dp">40dp</dimen>
+    <dimen name="layout_margin_48dp">48dp</dimen>
+    <dimen name="layout_margin_28dp">28dp</dimen>
+    <dimen name="layout_margin_50dp">50dp</dimen>
+    <dimen name="layout_margin_55dp">55dp</dimen>
+    
+    <!-- 通用的字体大小 -->
+    <dimen name="text_size_24sp">24.0sp</dimen>
+    <dimen name="text_size_22sp">22.0sp</dimen>
+    <dimen name="text_size_20sp">20.0sp</dimen>
+    <dimen name="text_size_18sp">18.0sp</dimen>
+    <dimen name="text_size_17sp">17.0sp</dimen>
+    <dimen name="text_size_16sp">16.0sp</dimen>
+    <dimen name="text_size_15sp">15.0sp</dimen>
+    <dimen name="text_size_14sp">14.0sp</dimen>
+    <dimen name="text_size_12sp">12.0sp</dimen>
+    <dimen name="text_size_10sp">10.0sp</dimen>
+
+    <!-- 意向岗位界面 -->
+    <dimen name="intent_margin_30dp">30dp</dimen>
+    <dimen name="intent_margin_25dp">25dp</dimen>
+    <dimen name="intent_margin_20dp">20dp</dimen>
+    <dimen name="intent_margin_10dp">10dp</dimen>
+    <dimen name="intent_margin_5dp">5dp</dimen>
+    <dimen name="intent_margin_50dp">50dp</dimen>
+
+    <!-- 候选人界面 -->
+    <dimen name="candidate_margin_15dp">15dp</dimen>
+    <dimen name="candidate_margin_60dp">60dp</dimen>
+    <dimen name="candidate_margin_40dp">40dp</dimen>
+    <dimen name="candidate_margin_35dp">35dp</dimen>
+    <dimen name="candidate_margin_12dp">12dp</dimen>
+    <dimen name="candidate_margin_10dp">10dp</dimen>
+    <dimen name="candidate_margin_5dp">5dp</dimen>
+    <dimen name="candidate_margin_50dp">50dp</dimen>
+    <dimen name="candidate_margin_20dp">20dp</dimen>
+    <dimen name="candidate_margin_2dp">2dp</dimen>
+    <dimen name="candidate_margin_45dp">45dp</dimen>
+    <dimen name="candidate_margin_30dp">30dp</dimen>
+    <dimen name="candidate_margin_48dp">48dp</dimen>
+    <dimen name="candidate_margin_25dp">25dp</dimen>
+    <dimen name="candidate_margin_70dp">70dp</dimen>
+
+    <!-- 个人profile页 -->
+    <dimen name="person_profile_20dp">20dp</dimen>
+    <dimen name="person_profile_80dp">80dp</dimen>
+    <dimen name="person_profile_10dp">10dp</dimen>
+    <dimen name="person_profile_15dp">15dp</dimen>
+    <dimen name="person_profile_12dp">12dp</dimen>
+    <dimen name="person_profile_5dp">5dp</dimen>
+    <dimen name="person_profile_7dp">7dp</dimen>
+    <dimen name="person_profile_30dp">30dp</dimen>
+
+    <!-- 我的信息 基本信息修改页 -->
+    <dimen name="person_profile_modify_7dp">7.5dp</dimen>
+    <dimen name="person_profile_modify_20dp">20dp</dimen>
+    <dimen name="person_profile_modify_75dp">75dp</dimen>
+    <dimen name="layout_margin_inver8dp">-8dp</dimen>
+
+    <!-- 技能标签 -->
+    <dimen name="person_profile_tag_10dp">10dp</dimen>
+    <dimen name="person_profile_tag_20dp">20dp</dimen>
+    <dimen name="person_profile_tag_50dp">50dp</dimen>
+    <dimen name="person_profile_tag_40dp">40dp</dimen>
+    <dimen name="group_list_item_image_heght">100dip</dimen>
+    
+    <!-- 其他人的profile -->
+    <dimen name="other_profile_2dp">2dp</dimen>
+    <dimen name="other_profile_3dp">3dp</dimen>
+    <dimen name="other_profile_5dp">5dp</dimen>
+    <dimen name="other_profile_7dp">7dp</dimen>
+    <dimen name="other_profile_10dp">10dp</dimen>
+    <dimen name="other_profile_15dp">15dp</dimen>
+    <dimen name="other_profile_17dp">17dp</dimen>
+    <dimen name="other_profile_20dp">20dp</dimen>
+    <dimen name="other_profile_25dp">25dp</dimen>
+    <dimen name="other_profile_30dp">30dp</dimen>
+    <dimen name="other_profile_75dp">75dp</dimen>
+    <dimen name="other_profile_80dp">80dp</dimen>
+    <!-- 我发布的职位列表 -->
+    <dimen name="position_list_2dp">2dp</dimen>
+    <dimen name="position_list_5dp">5dp</dimen>
+    <dimen name="position_list_7dp">7dp</dimen>
+    <dimen name="position_list_8dp">8dp</dimen>
+    <dimen name="position_list_10dp">10dp</dimen>
+    <dimen name="position_list_15dp">15dp</dimen>
+    <dimen name="position_list_20dp">20dp</dimen>
+    <dimen name="position_list_25dp">25dp</dimen>
+    <!-- 陌生人列表 -->
+    
+    <dimen name="strangers_2dp">2dp</dimen>
+    <dimen name="strangers_3dp">3dp</dimen>
+    <dimen name="strangers_5dp">5dp</dimen>
+    <dimen name="strangers_7dp">7dp</dimen>
+    <dimen name="strangers_10dp">10dp</dimen>
+    <dimen name="strangers_15dp">15dp</dimen>
+    <dimen name="strangers_17dp">17dp</dimen>
+    <dimen name="strangers_20dp">20dp</dimen>
+    <dimen name="strangers_25dp">25dp</dimen>
+    <dimen name="strangers_30dp">30dp</dimen>
+    <dimen name="strangers_35dp">35dp</dimen>
+    <dimen name="strangers_45dp">45dp</dimen>
+    <dimen name="strangers_55dp">55dp</dimen>
+    <dimen name="strangers_60dp">60dp</dimen>
+    <dimen name="strangers_75dp">75dp</dimen>
+    <!-- 匿名名片 -->
+    <dimen name="ano_card_2dp">2dp</dimen>
+    <dimen name="ano_card_3dp">3dp</dimen>
+    <dimen name="ano_card_5dp">5dp</dimen>
+    <dimen name="ano_card_7dp">7dp</dimen>
+    <dimen name="ano_card_10dp">10dp</dimen>
+    <dimen name="ano_card_15dp">15dp</dimen>
+    <dimen name="ano_card_17dp">17dp</dimen>
+    <dimen name="ano_card_20dp">20dp</dimen>
+    <dimen name="ano_card_25dp">25dp</dimen>
+    <dimen name="ano_card_30dp">30dp</dimen>
+    <dimen name="ano_card_35dp">35dp</dimen>
+    <dimen name="ano_card_50dp">50dp</dimen>
+    <dimen name="ano_card_55dp">55dp</dimen>
+    <dimen name="ano_card_60dp">60dp</dimen>
+    <dimen name="ano_card_75dp">75dp</dimen>
+    <dimen name="ano_card_95dp">95dp</dimen>
+
+    <!-- 发布职位 -->
+    <dimen name="publish_position_2dp">2dp</dimen>
+    <dimen name="publish_position_3dp">3dp</dimen>
+    <dimen name="publish_position_5dp">5dp</dimen>
+    <dimen name="publish_position_7dp">7dp</dimen>
+    <dimen name="publish_position_10dp">10dp</dimen>
+    <dimen name="publish_position_15dp">15dp</dimen>
+    <dimen name="publish_position_17dp">17dp</dimen>
+    <dimen name="publish_position_20dp">20dp</dimen>
+    <dimen name="publish_position_25dp">25dp</dimen>
+    <dimen name="publish_position_30dp">30dp</dimen>
+    <dimen name="publish_position_35dp">35dp</dimen>
+    <dimen name="publish_position_50dp">50dp</dimen>
+    <dimen name="publish_position_55dp">55dp</dimen>
+    <dimen name="publish_position_60dp">60dp</dimen>
+    <dimen name="publish_position_65dp">65dp</dimen>
+    <dimen name="publish_position_75dp">75dp</dimen>
+    
+    <!-- login -->
+    <dimen name="login_50dp">50dp</dimen>
+    <dimen name="login_164">164dp</dimen>
+    <dimen name="login_127">127dp</dimen>
+    <dimen name="login_avatar_border_0dp">0dp</dimen>
+    <dimen name="login_avatar_border_2dp">2dp</dimen>
+    
+    <dimen name="adp_holo_title_height">64dip</dimen>
+    <dimen name="adp_holo_title_divider_height">2dp</dimen>
+    
+    <!-- 各个页面下部菜单栏 -->
+    <dimen name="tab_common_size">12sp</dimen>
+    <dimen name="tab_common_height">55dp</dimen>
+    
+    <!-- actionbar -->
+    <dimen name="action_common_height">55dp</dimen>
+</resources>

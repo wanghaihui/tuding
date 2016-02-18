@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/register_menu_margin_top"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <com.xiaobukuaipao.vzhi.view.AutoCompleteTextViewWithDel
+        android:id="@+id/auto_job_salary_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_edittext_guide"
+        android:completionThreshold="1"
+        android:hint="请完善薪水"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/save_job_salary_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="20dp"
+        android:background="@color/job_apply_button_bg"
+        android:text="保存"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_button" />
+
+</LinearLayout>

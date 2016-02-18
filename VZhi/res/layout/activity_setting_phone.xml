@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <LinearLayout
+        android:id="@+id/mobile_pawd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_view"
+                android:text="@string/setting_modify_new_mobile"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <EditText
+                android:id="@+id/mobile_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_mobile_number"
+                android:inputType="number"
+                android:textColorHint="@color/general_color_999999" />
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/verify_code_logo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_view"
+                android:text="@string/setting_verify_code"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <EditText
+                android:id="@+id/verify_code_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_verify_code"
+                android:inputType="number"
+                android:textColorHint="@color/general_color_999999" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/verify_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_btn_f09494"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_view"
+                android:text="@string/setting_password"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <EditText
+                android:id="@+id/pswd_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/general_color_999999" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

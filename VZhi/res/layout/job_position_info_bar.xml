@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_menu_bar_id"
+    android:layout_width="fill_parent"
+    android:layout_height="46dip"
+    android:background="@drawable/title_bar"
+    android:gravity="center_vertical"
+    android:padding="0.0px" >
+
+    <TextView
+        android:id="@+id/ivTitleName"
+        style="@style/A1_Font"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="96.0dip"
+        android:paddingRight="96.0dip"
+        android:singleLine="true" />
+
+    <FrameLayout
+        android:id="@+id/menu_bar_back_btn_layout"
+        android:layout_width="@dimen/action_common_height"
+        android:layout_height="@dimen/action_common_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left|center"
+        android:background="@drawable/btn_return_bg_selector"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_view"
+            android:src="@drawable/btn_return_img_selector" />
+    </FrameLayout>
+
+    <com.xiaobukuaipao.vzhi.widget.VerifyUserAvatar
+        android:id="@+id/menu_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

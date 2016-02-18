@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dialog_month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+        <item>--</item>
+    </string-array>
+    <string-array name="look_look">
+        <item>看机会</item>
+        <item>逛人才</item>
+    </string-array>
+    <string-array name="job_experience">
+        <item>不满1年经验</item>
+        <item>1年经验</item>
+        <item>2年经验</item>
+        <item>3年经验</item>
+        <item>4年经验</item>
+        <item>5年经验</item>
+        <item>6年经验</item>
+        <item>7年经验</item>
+        <item>8年经验</item>
+        <item>9年经验</item>
+        <item>10年及以上经验</item>
+    </string-array>
+    <string-array name="logout_array">
+        <item>关闭途盯</item>
+        <item>退出账户</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="15dip"
+	android:background="@color/black"
+	android:orientation="vertical" >
+              
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="当前城市" >
+	    </TextView>
+	    
+	    <include layout="@layout/bottom_line"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"  >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="北京" >
+	    </TextView>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="热门城市" >
+	    </TextView>
+	    
+	    <include layout="@layout/bottom_line"/>
+    </LinearLayout>
+    
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_beijing"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="北京" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_shanghai"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="上海" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_guangzhou"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="广州" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:id="@+id/job_position_select"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_shenzhen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="深圳" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_hangzhou"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="杭州" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip" >
+	              
+	    <TextView
+			android:id="@+id/intent_city_chengdu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="@dimen/font_large"
+	        android:textColor="@color/white"
+	        android:text="成都" >
+	    </TextView>
+	    
+	    <CheckBox 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/right_jump_desc"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"/>
+		
+	</RelativeLayout>
+    
+</LinearLayout>

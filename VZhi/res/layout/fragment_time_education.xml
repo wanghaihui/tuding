@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/register_menu_margin_top"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/user_school_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:itemTextLeftTitle="@string/user_guide_school_time" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <include layout="@layout/common_button" />
+    </LinearLayout>
+
+</LinearLayout>

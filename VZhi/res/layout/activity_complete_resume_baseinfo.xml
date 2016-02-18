@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar_post" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light_gray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/complete_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/general_gray_999999"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/bg_corners"
+                android:orientation="vertical"
+                android:paddingBottom="1dp" >
+
+                <RelativeLayout
+                    android:id="@+id/post_resume_complete_realhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/post_resume_complete_realhead_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/post_resume_complete_realhead"
+                        android:textSize="20sp" />
+
+                    <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                        android:id="@+id/baseinfo_user_head"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/general_user_avatar"
+                        app:riv_border_width="0dp"
+                        app:riv_oval="true" />
+
+                    <ImageView
+                        android:id="@+id/icon_plus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignBottom="@+id/baseinfo_user_head"
+                        android:layout_alignRight="@+id/baseinfo_user_head"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/avatar_plus" />
+                </RelativeLayout>
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/post_resume_complete_realname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_add"
+                    app:displayArrow="false"
+                    app:leftLabel="@string/post_resume_complete_realname" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/post_resume_complete_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_add"
+                    app:displayArrow="false"
+                    app:leftLabel="@string/post_resume_complete_nickname" />
+
+                <RelativeLayout
+                    android:id="@+id/post_resume_complete_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/post_resume_complete_gender_title"
+                        style="@style/CommonTextViewStyle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_margin_20dp"
+                        android:text="@string/post_resume_complete_gender"
+                        android:textSize="20sp" />
+
+                    <com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup
+                        android:id="@+id/post_resume_complete_gender_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin_20dp"
+                        android:checkedButton="@+id/button_one"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@id/button_one"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dip"
+                            android:minWidth="40dip"
+                            android:text="@string/gender_man"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/radio_colors" />
+
+                        <RadioButton
+                            android:id="@+id/button_two"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dip"
+                            android:minWidth="40dip"
+                            android:text="@string/gender_woman"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/radio_colors" />
+                    </com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup>
+                </RelativeLayout>
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/post_resume_complete_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_add"
+                    app:displayArrow="false"
+                    app:itemTextLeftTitle="@string/post_resume_complete_age" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/post_resume_complete_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:centerTip="@string/general_tips_add"
+                    app:itemTextLeftTitle="@string/post_resume_complete_exp" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/post_resume_complete_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_add"
+                    app:itemTextLeftTitle="@string/post_resume_complete_city" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/post_resume_complete_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:displayArrow="false"
+                    app:leftLabel="@string/post_resume_complete_email"
+                    app:rightTip="@string/general_tips_advice" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/post_resume_complete_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:displayArrow="false"
+                    app:itemTextLeftTitle="@string/post_resume_complete_mobile" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

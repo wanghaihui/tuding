@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intent_margin_50dp"
+        android:background="@drawable/bg_layout_selector"
+        android:descendantFocusability="blocksDescendants" >
+
+        <TextView
+            android:id="@+id/job_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/general_color_666666"
+            android:textSize="@dimen/font_large" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/job_position_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/check_box_blue"
+            android:contentDescription="@string/right_jump_desc" />
+    </RelativeLayout>
+
+</LinearLayout>

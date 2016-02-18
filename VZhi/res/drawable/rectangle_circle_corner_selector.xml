@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/rectangle_circle_corner_f2f2f2" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/rectangle_circle_corner" android:state_pressed="false"></item>
+
+</selector>

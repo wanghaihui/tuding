@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/personal_edit_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 个人基本信息 -->
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="true" >
+
+                <RelativeLayout
+                    android:id="@+id/avatar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="15dp" >
+
+                    <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+                        android:id="@+id/person_avatar"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/image_view"
+                        android:scaleType="centerCrop"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="1.5dp"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="true" />
+
+                    <LinearLayout
+                        android:id="@+id/blur_bg_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/person_profile_15dp"
+                        android:layout_toRightOf="@id/person_avatar"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/person_profile_10dp"
+                        android:paddingTop="@dimen/person_profile_5dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/person_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_18sp" />
+
+                            <TextView
+                                android:id="@+id/person_loc_and_expr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/person_nickname"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/person_nickname"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_12sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/person_position_corp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/person_profile_5dp"
+                            android:layout_marginTop="@dimen/person_profile_5dp"
+                            android:maxLines="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/basic_info_edit"
+                    style="@style/ProfileEditBtn"
+                    android:layout_marginTop="@dimen/person_profile_10dp"
+                    android:src="@drawable/general_edit" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/person_profile_30dp" >
+
+                <!-- 自我介绍 -->
+
+                <LinearLayout
+                    android:id="@+id/person_sign_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageButton
+                            android:id="@+id/sign_edit"
+                            style="@style/ProfileEditBtn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/general_edit" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/personal_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin_20dp"
+                        android:layout_marginRight="@dimen/layout_margin_20dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingBottom="@dimen/layout_margin_15dp"
+                        android:hint="这个人很懒，还没有写自我介绍"
+                        android:textColor="@color/general_color_666666" />
+                </LinearLayout>
+
+                <!-- 技能标签 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+					<!-- 
+                    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/person_profile_20dp"
+                    android:paddingTop="@dimen/person_profile_10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ano_card_skills"
+                        android:textColor="@color/general_color_cccccc"
+                        android:textSize="@dimen/text_size_14sp" />
+                    
+                    <ImageButton
+	                    android:id="@+id/skills_edit"
+	                    style="@style/ProfileEditBtn"
+	                    android:layout_centerVertical="true"
+	                    android:src="@drawable/general_edit" />
+                </RelativeLayout>
+                 -->
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/general_color_F2F2F2" >
+
+                        <TextView
+                            style="@style/ProfileTitle"
+                            android:text="@string/title_skills_tab" />
+
+                        <ImageButton
+                            android:id="@+id/skills_edit"
+                            style="@style/ProfileEditBtn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/general_edit" />
+                    </RelativeLayout>
+					
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/personal_skills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_margin_20dp"
+                            android:layout_marginRight="@dimen/layout_margin_20dp"
+                            android:lineSpacingMultiplier="1.2"
+                            android:paddingBottom="@dimen/layout_margin_5dp"
+                            android:paddingTop="@dimen/person_profile_5dp"
+                            android:textColor="@color/general_color_666666" />
+
+                        <TextView
+                            android:id="@+id/not_add_skills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/other_profile_20dp"
+                            android:text="@string/not_add_skills_str"
+                            android:textColor="@color/general_color_cccccc"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 工作经历 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/general_color_F2F2F2" >
+
+                        <TextView
+                            style="@style/ProfileTitle"
+                            android:text="@string/title_job_experience" />
+
+                        <ImageButton
+                            android:id="@+id/job_expr_edit"
+                            style="@style/ProfileEditBtn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/general_edit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/person_profile_20dp"
+                        android:paddingTop="@dimen/person_profile_20dp" >
+
+                        <com.xiaobukuaipao.vzhi.view.NestedListView
+                            android:id="@+id/job_experience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="@dimen/person_profile_15dp" />
+
+                        <TextView
+                            android:id="@+id/not_add_job_experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/other_profile_20dp"
+                            android:text="@string/not_add_job_experience_str"
+                            android:textColor="@color/general_color_cccccc"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 教育背景 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/general_color_F2F2F2" >
+
+                        <TextView
+                            style="@style/ProfileTitle"
+                            android:text="@string/title_edu_background" />
+
+                        <ImageButton
+                            android:id="@+id/edu_expr_edit"
+                            style="@style/ProfileEditBtn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/general_edit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/person_profile_20dp"
+                        android:paddingTop="@dimen/person_profile_20dp" >
+
+                        <com.xiaobukuaipao.vzhi.view.NestedListView
+                            android:id="@+id/edu_experience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="@dimen/person_profile_15dp" />
+
+                        <TextView
+                            android:id="@+id/not_add_edu_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/other_profile_20dp"
+                            android:text="@string/not_add_edu_bg_str"
+                            android:textColor="@color/general_color_cccccc"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 求职意向 -->
+
+                <LinearLayout
+                    android:id="@+id/ano_card_intention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/general_color_F2F2F2" >
+
+                        <TextView
+                            style="@style/ProfileTitle"
+                            android:text="@string/title_job_objective" />
+
+                        <ImageButton
+                            android:id="@+id/job_objective_edit"
+                            style="@style/ProfileEditBtn"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/general_edit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/person_profile_20dp"
+                        android:paddingTop="@dimen/person_profile_20dp" >
+
+                        <LinearLayout
+                            android:id="@+id/intention_position_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/person_position"
+                                style="@style/CommonTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/person_vocation"
+                                style="@style/CommonTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/person_intent_city"
+                                style="@style/CommonTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/person_salary"
+                                style="@style/CommonTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/person_company_type"
+                                style="@style/CommonTextViewStyle" />
+
+                            <TextView
+                                android:id="@+id/person_job_state"
+                                style="@style/CommonTextViewStyle" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/not_add_intention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/other_profile_20dp"
+                            android:text="@string/not_add_intention_str"
+                            android:textColor="@color/general_color_cccccc"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.xiaobukuaipao.vzhi.view.ProgressBarCircularIndeterminate
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/register_menu_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_common_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/base_interface_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96dp"
+            android:paddingRight="96dp"
+            android:singleLine="true" />
+
+        <FrameLayout
+            android:id="@+id/menu_bar_back_btn_layout"
+            android:layout_width="@dimen/action_common_height"
+            android:layout_height="@dimen/action_common_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:background="@drawable/btn_return_bg_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/btn_return_img_selector" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/menu_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@color/top_btn_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/general_save"
+            android:textColor="@color/font_on_dark"
+            android:textSize="@dimen/font_button"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

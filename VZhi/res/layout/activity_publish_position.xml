@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/applied_publish_position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:id="@+id/publish_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/publish_position_5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                        android:id="@+id/corp_logo"
+                        android:layout_width="@dimen/publish_position_65dp"
+                        android:layout_height="@dimen/publish_position_65dp"
+                        android:layout_marginLeft="@dimen/publish_position_15dp"
+                        android:contentDescription="@string/image_view"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_corp_logo"
+                        app:riv_border_color="@color/bg_light_gray"
+                        app:riv_border_width="1dp"
+                        app:riv_corner_radius="10dp"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="false" />
+
+                    <TextView
+                        android:id="@+id/corp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/publish_position_10dp"
+                        android:textColor="@color/general_position_title"
+                        android:textSize="@dimen/text_size_20sp" />
+                </LinearLayout>
+
+                <com.xiaobukuaipao.vzhi.view.LinesTextView
+                    android:id="@+id/corp_benefits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/publish_position_15dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/publish_position_5dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/position_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/publish_position_name" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:displayArrow="false"
+                    app:itemTextLeftTitle="@string/publish_position_salary" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/recruit_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dispArrow="false"
+                    app:leftLabel="@string/publish_position_recruit_num" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/publish_position_city" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/job_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/publish_position_experience" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/edu_require"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/publish_position_degree" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/high_lights"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/publish_position_lights_desc"
+                    app:itemTextLeftTitle="@string/publish_position_lights" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/position_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/publish_position_desc_advice"
+                    app:itemTextLeftTitle="@string/publish_position_desc" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/notify_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    app:displayArrow="false"
+                    app:itemTextLeftTitle="@string/publish_position_email" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">途盯招聘</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="have_a_look">逛逛</string>
+    <string name="agree">已阅读并同意《途盯软件许可及服务协议》</string>
+    <string name="agree_front">请先选择同意《途盯软件许可及服务协议》</string>
+	
+    <!-- tips -->
+
+    <string name="please_input_mobile_number">请输入手机号码</string>
+    <string name="please_input_password">请输入至少6位密码</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="please_input_login_password">请重新设置登陆密码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="user_register_phone">手机号注册</string>
+    <string name="user_guide_phone_center">手机验证码</string>
+    <string name="register_dialog_phone">手机号输入不正确!</string>
+    <string name="register_dialog_phone_code">验证码不正确!</string>
+    <string name="general_search">搜索</string>
+    <string name="general_save">保存</string>
+    <string name="general_null_str"></string>
+    <string name="general_fill_must">请完善</string>
+    <string name="general_fill">建议完善</string>
+    <string name="general_finished">完成</string>
+    <string name="general_send">发送</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="delete_dialog_title">提示</string>
+    <string name="delete_dialog_sure">知道了</string>
+
+    <!-- some tips -->
+    <string name="general_tips">提示</string>
+    <string name="general_tips_add">待完善</string>
+    <string name="general_tips_advice">建议完善</string>
+    <string name="general_tips_next">下一步</string>
+    <string name="general_tips_pre">上一步</string>
+    <string name="general_tips_unsetting">未设置</string>
+    <string name="general_tips_unuseable">不可用</string>
+    <string name="general_tips_aladd">已添加</string>
+    <string name="general_tips_toadd">添加</string>
+    <string name="general_tips_empty">列表为空</string>
+    <string name="general_tips_jump">跳过</string>
+    <string name="general_tips_save">保存</string>
+    <string name="general_tips_alfill">已填写</string>
+    <!-- %n$ms：代表输出的是字符串，n代表是第几个参数，设置m的值可以在输出之前放置空格 -->
+    <string name="general_tips_fill_tips">请完善<xliff:g id="tips">%1$s</xliff:g></string>
+    <string name="general_tips_choose_tips">请选择<xliff:g id="tips">%1$s</xliff:g></string>
+    <string name="general_tips_re">回复</string>
+    <string name="general_tips_question">提问</string>
+    <string name="general_tips_suggest_add">建议完善</string>
+    <string name="general_tips_finished">完成</string>
+    <string name="general_tips_joinin">加入</string>
+    <string name="general_tips_uploading">正在上传</string>
+    <string name="general_tips_edit">编辑</string>
+    <string name="general_tips_post">投递</string>
+    <string name="general_tips_modify">修改</string>
+    <string name="general_tips_uncheck">未验证</string>
+    <string name="general_tips_alcheck">已验证</string>
+    <string name="general_tips_reset">重置</string>
+    <string name="general_tips_tip_modify">点击修改</string>
+    <string name="general_tips_all">全部</string>
+    <string name="general_tips_edit_close">正在编辑信息,是否放弃</string>
+    <string name="general_tips_saving">正在保存</string>
+    <string name="general_tips_splite">~</string>
+    <string name="general_tips_isme_postresume">不能对自己投递简历</string>
+    <string name="general_tips_to_complete">去完善信息</string>
+    <string name="general_tips_re_register">继续注册</string>
+    <string name="general_tips_go_on">忽略</string>
+    <string name="general_tips_year">年</string>
+    <string name="general_tips_month">月</string>
+    <string name="general_tips_mobile_number_not_none">手机号码不能为空</string>
+    <string name="general_tips_password_not_none">密码不能为空</string>
+    <string name="general_tips_verifycode_not_none">验证码不能为空</string>
+    <string name="general_tips_password_formatter_error">请输入至少6位密码</string>
+    <string name="general_tips_verifycode_formatter_error">验证码格式不正确</string>
+    <string name="general_tips_mobile_number_formatter_error">手机号码格式不正确</string>
+    <string name="general_tips_offline">您的帐号已在其它手机设备登录</string>
+    <string name="general_tips_login_success">登陆成功</string>
+    <string name="general_tips_group_msg_setting_open">消息免打扰开</string>
+    <string name="general_tips_group_msg_setting_close">消息免打扰关</string>
+    <string name="general_tips_network_unknow">网络状况好像不太好</string>
+    <string name="general_tips_default_benefits">五险一金</string>
+    <string name="general_tips_default_unlogin">请先登录</string>
+    <string name="general_tips_default_skills">技能: <xliff:g>%1$s</xliff:g></string>
+    <string name="general_tips_ano">匿名</string>
+    <string name="general_tips_repley">请输入</string>
+    <string name="general_tips_give_up">放弃修改</string>
+    <string name="general_tips_back_one_more">再按一次退出</string>
+    <string name="general_tips_save_success">保存成功</string>
+    <string name="general_tips_intention_guide">想获得更精准的职位推荐机会，请完善求职意向</string>
+    <string name="general_tips_dot">&#160;•&#160;</string>
+    <string name="general_tips_spilte">,&#160;&#160;</string>
+    <string name="general_tips_selfsign">简单几句介绍一下自己，让HR主动来找你</string>
+	<string name="general_tips_publish">发布</string>
+ 	<string name="general_tips_publishing">发布中</string>
+ 	<string name="general_tips_publishing_null">不能发布空信息</string>
+ 	<string name="general_tips_publish_success">发布成功</string>
+    <!-- register baseinfo -->
+    <string name="register_baseinfo">基本信息</string>
+    <string name="register_tips">您上次的注册流程未全部完成，请选择是否继续完成注册</string>
+    <string name="register_nickname">昵称</string>
+    <string name="register_gender">性别</string>
+    <string name="register_age">年龄</string>
+    <string name="register_expr">工作经验</string>
+    <string name="register_location">所在地</string>
+    <string name="register_takephoto">拍照</string>
+    <string name="register_imgs">从手机相册选择</string>
+    <string name="register_avatar">指定虚拟头像</string>
+    <string name="register_avatar_f">萌妹</string>
+    <string name="register_avatar_m">萌叔</string>
+    <string name="register_dialog_phone_tip">点击上面的 \"注册\"按钮 , 即表示你同意</string>
+    <string name="register_dialog_phone_agree">《软件许可及服务协议》</string>
+    <string name="register_dialog_top_title">确认消息</string>
+    <string name="register_phone_dialog_top_title">请确认手机号码</string>
+    <string name="register_phone_dialog_top_msg">验证码短信已经发到此手机号</string>
+    <string name="register_upload_success">基本信息已经注册成功</string>
+    <string name="shareData_preferences">com.xiaobukuaipao.vzhi</string>
+    <string name="user_guide_phone">手机号码注册</string>
+    <string name="user_guide_phone_str">请输入手机号码</string>
+    <string name="user_guide_phone_domain_num">中国 +86</string>
+    <string name="user_guide_education_jump">跳过</string>
+    <string name="user_guide_job_right">找职位</string>
+    <string name="register_nickname_button_title">完成</string>
+    <string name="user_guide_job_company_menu">公司名称</string>
+    <string name="user_guide_nick_name_menu">填写昵称</string>
+    <string name="user_guide_choose_menu">选择身份</string>
+    <string name="user_profile_menu">用户简历</string>
+    <string name="user_guide_gender_man">男</string>
+    <string name="user_guide_gender_girl">女</string>
+    <string name="register_choose_gender">选择性别</string>
+    <string name="register_place">居住地点</string>
+    <string name="location_failed">定位失败</string>
+    <string name="location_loading">正在定位...</string>
+    <string name="location_loaded">当前定位的城市</string>
+    <string name="hot_cities">热门城市</string>
+    <string name="china_86">中国  +86</string>
+    <string name="inputPhoneNumber">请填写手机号码</string>
+    <string name="verify_code_prompt">手机：</string>
+    <string name="input_verify_code">请输入验证码</string>
+    <string name="retry_send_num">重新发送(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="retry_send">重新发送</string>
+    <string name="title_job_objective">求职意向</string>
+    <string name="default_job_objective_str">待完善</string>
+    <string name="job_objective_category">行业方向</string>
+    <string name="job_objective_intention_pos">意向岗位</string>
+    <string name="job_objective_salary">期望月薪</string>
+    <string name="job_objective_company_type">公司类型</string>
+    <string name="job_objective_intention_city">目标城市</string>
+    <string name="job_objective_jobstate">求职心态</string>
+    <string name="job_objective_job_timerange">工作时间</string>
+    <string name="main_navigation_recruit">求职招聘</string>
+    <string name="main_navigation_chat">对话</string>
+    <string name="main_navigation_person">我</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="title_password_setting">密码设置</string>
+    <string name="pword_setting_tip">设置密码后，你可以用手机号+密码登录客户端和网站</string>
+    <string name="password_setting_phone">手机号</string>
+    <string name="password_setting_pword">密  码</string>
+    <string name="password_setting_pword_confirm">确认密码</string>
+
+    <!-- hr register info -->
+    <string name="title_hr_info">基本信息</string>
+    <string name="title_photo_picker">照片</string>
+    <string name="hr_info_portrait">头像</string>
+    <string name="hr_info_name">真实姓名</string>
+    <string name="hr_info_nickname">昵称</string>
+    <string name="hr_info_gender">性别</string>
+    <string name="gender_man">男</string>
+    <string name="gender_woman">女</string>
+    <string name="personal_info_age">年龄</string>
+    <string name="personal_info_expr">工作经验</string>
+    <string name="personal_info_location">所在地</string>
+    <string name="personal_info_mobile">手机</string>
+    <string name="personal_info_email">邮箱</string>
+    <string name="title_company_info">招聘身份</string>
+    <string name="company_info_name">公司全称</string>
+    <string name="company_info_time">在职时间</string>
+    <string name="company_info_position">职位名称</string>
+    <string name="company_info_email">公司邮箱</string>
+    <string name="company_info_email_tips">用于身份审核及接收简历，必须为公司邮箱</string>
+    <string name="company_info_name_tips">公司全程必须与公司营业执照中的名称保持一致，数据提交后不可修改</string>
+    <string name="company_info_name_rec">所在公司名称推荐</string>
+    <string name="company_info_name_no">以上公司都不是，自己填写</string>
+    <string name="company_info_ltd">公司简称</string>
+    <string name="company_info_type">公司类型</string>
+    <string name="company_info_email_tips1">注: 公司邮箱用于身份审核及接收简历,必须为企业邮箱,否则不能通过审核</string>
+    <string name="company_info_name_tips1">注: 公司全称必须与公司营业执照中的名称保持一致,我们讲对此名称进行审核,提交后不可修改</string>
+
+    <!-- corp info edit -->
+    <string name="corp_edit_simple_name">公司简称</string>
+    <string name="corp_edit_type">公司类型</string>
+    <string name="corp_edit_industry">公司行业</string>
+    <string name="corp_edit_scale">公司规模</string>
+    <string name="corp_edit_location">公司所在地</string>
+    <string name="corp_edit_location_detail">公司详细地址</string>
+    <string name="corp_edit_location_detail_hint">请完善公司详细地址</string>
+    <string name="corp_edit_benifits">公司福利</string>
+    <string name="corp_edit_website">公司网址</string>
+    <string name="corp_edit_desc">公司简介</string>
+    <string name="corp_edit_desc_hint">请完善公司简介</string>
+    <string name="corp_edit_benefits_hint">请完善公司福利</string>
+    <string name="corp_edit_benefits_tips">公司福利:</string>
+    <string name="email_title">邮箱确认</string>
+    <string name="email_tips">点击确定按钮，我们将向您的邮箱<xliff:g id="name">%1$s</xliff:g>发送一封验证邮件，请再次确认邮箱地址是否正确</string>
+    <string name="company_info_time_tips"><xliff:g id="name">%1$s</xliff:g>~至今</string>
+    <string name="title_email_verify">邮箱验证</string>
+    <string name="hint_email_verify_1">我们已经将</string>
+    <string name="hint_email_verify_2">验证邮件</string>
+    <string name="hint_email_verify_3">发送到以下邮箱</string>
+    <string name="retry_send_email">重新发送验证邮件</string>
+    <string name="goto_email_box">去往邮箱</string>
+    <string name="not_received_email">没有收到邮件？</string>
+    <string name="not_received_email_tips">请联系12345678901客服电话</string>
+    <string name="register_hr_baseinfo_finished">开始使用</string>
+    <string name="title_company_selected">完善公司全称</string>
+    <string name="certify_str">认证</string>
+    <string name="identity_str_ceruser">用户</string>
+    <string name="identity_str_user">普通用户</string>
+    <string name="identity_str_hr">HR</string>
+    <string name="identity_str_hunt">猎头</string>
+    <string name="title_jobposition_info">职位详情</string>
+    <string name="view_num_str">查看 <xliff:g id="number">%1$d</xliff:g>人</string>
+    <string name="apply_num_str">投递 <xliff:g id="number">%1$d</xliff:g>人</string>
+    <string name="read_num_str">HR已读 <xliff:g id="number">%1$d</xliff:g>人</string>
+    <string name="company_benefits_str">公司福利</string>
+    <string name="general_salary_str">薪资</string>
+    <string name="general_highlights_str">职位诱惑</string>
+    <string name="general_highlights_tips">诱惑: <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="position_duty_str">岗位职责及要求:</string>
+    <string name="position_require_str">任职要求:</string>
+    <string name="send_resume_str">投递简历</string>
+    <string name="share_position_str">分享职位</string>
+    <string name="complete_personal_info">您的个人信息还不完整，请投递简历前完善个人信息</string>
+    <string name="complete_workexpr_info">完善工作经历后才可与对方进行互动</string>
+    <string name="person_profile_str">我的信息</string>
+    <string name="person_profile_edit">修改信息</string>
+    <string name="person_anonymous_str">匿名信息</string>
+    <string name="title_job_experience">工作经历</string>
+    <string name="title_edu_background">教育背景</string>
+    <string name="title_skills_tab">技能</string>
+    <string name="title_contacts_way">联系方式</string>
+    <string name="title_recruiting">在招职位</string>
+    <string name="improve_edu_expr">完善教育经历</string>
+    <string name="private_info_str">用户设置了隐私保护</string>
+
+    <!-- 个人信息页面展示 底部栏 -->
+    <string name="action_greet_str">打招呼</string>
+    <string name="action_question_str">提问</string>
+    <string name="action_friend_str">加好友</string>
+    <string name="action_report_str">举报</string>
+    <string name="action_unbind">解除好友</string>
+    <string name="action_chat">聊天</string>
+    <string name="action_friend_tips">加对方为好友，您将只能以实名身份与对方沟通</string>
+    <string name="action_unbind_tips">你是否要与<xliff:g id="name">%1$s</xliff:g>解除好友关系</string>
+    <string name="action_question_tips">提问 <xliff:g id="name">%1$s</xliff:g>:  </string>
+    <string name="title_recruit_position">在招职位</string>
+
+    <!-- 设置 -->
+    <string name="setting_title_str">设置</string>
+    <string name="setting_account_str">帐号管理</string>
+    <string name="setting_about_str">关于我们</string>
+    <string name="setting_update_str">检查更新</string>
+    <string name="setting_version_str">当前版本 <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="setting_private_str">隐私设置</string>
+    <string name="setting_newmsg_str">新消息提醒</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="setting_cur_mobile">当前手机号码:<xliff:g id="number">%1$s</xliff:g></string>
+    <string name="setting_mobile">手机号码</string>
+    <string name="setting_password">密码</string>
+    <string name="setting_modify_mobile">修改手机号码</string>
+    <string name="setting_modify_mobile_tips">绑定新的登陆手机号</string>
+    <string name="setting_modify_new_mobile">新手机号</string>
+    <string name="setting_modify_password">修改密码</string>
+    <string name="setting_old_pswd">原密码</string>
+    <string name="setting_new_pswd">设置密码</string>
+    <string name="setting_new_pswd2">确认密码</string>
+    <string name="setting_find_pswd">找回密码</string>
+    <string name="setting_forget_password">忘记密码</string>
+    <string name="setting_forget_password_tips">忘记密码?</string>
+    <string name="setting_forget_password_reset">重置密码</string>
+    <string name="setting_verify_code">验证码</string>
+    <string name="setting_modify_mobile_verify">验证手机号码</string>
+    <string name="setting_vrifycode_hint">请输入验证码</string>
+    <string name="setting_personal_info_str">个人资料</string>
+    <string name="setting_contact_way_str">联系方式</string>
+    <string name="setting_pswd_tips"><xliff:g id="name">%1$s</xliff:g>不能为空</string>
+    <string name="setting_pswd_tips2"><xliff:g id="name">%1$s</xliff:g>与<xliff:g id="name">%2$s</xliff:g>不一致</string>
+    <string name="setting_pswd_tips3"><xliff:g id="name">%1$s</xliff:g>格式不正确</string>
+    <string name="setting_msg_sound">新消息声音</string>
+    <string name="setting_msg_vibration">新消息震动</string>
+
+    <!-- about profile -->
+    <string name="job_apply_button_name">申请职位</string>
+    <string name="user_guide_school_time">起止时间</string>
+    <string name="common_button_name">保存</string>
+    <string name="user_guide_job_experience_tip">月薪不会出现在简历当中,并将为您做到绝对的保密,请您放心填写</string>
+    <string name="common_button_job_detail_find">开始看职位</string>
+    <string name="send_position_invite">发送职位邀请</string>
+    <string name="person_contacts_str">联系人</string>
+    <string name="person_group_str">群组</string>
+    <string name="stranger_str">陌生人</string>
+    <string name="reply_question_str">提问回复</string>
+    <string name="intention_position_str">职位</string>
+    <string name="intention_industry_str">行业</string>
+    <string name="intention_cities_str">城市</string>
+    <string name="intention_salary_str">月薪</string>
+    <string name="intention_corptype_str">公司类型</string>
+    <string name="intention_status_str">求职心态</string>
+    <string name="intention_position">期望职位</string>
+    <string name="intention_salary">期望月薪</string>
+    <string name="intention_industry">期望行业</string>
+    <string name="intention_city">期望城市</string>
+    <string name="personal_skills">专业技能</string>
+    <string name="unjobs">您已在该段工作经历上开通招聘服务，请到[招聘服务]中修改</string>
+    <string name="tip_to_check_contact">点击查看</string>
+
+    <!-- 发布职位 -->
+    <string name="publish_position_str">发布职位</string>
+    <string name="publish_position_check">扫码登录Web端发布职位</string>
+    <string name="publish_position_check_tips">用电脑浏览器打开<xliff:g id="website">%1$s</xliff:g>,也可以在Web端发布职位</string>
+    <string name="publish_position_phone">手机端发布职位</string>
+    <string name="publish_position_highlight">职位诱惑</string>
+    <string name="recruit_num_str">招聘人数</string>
+    <string name="resident_city_str">所在城市</string>
+    <string name="job_expr_str">工作经验</string>
+    <string name="edu_require_str">学历要求</string>
+    <string name="position_desc_str">职位描述</string>
+    <string name="notify_email_str">通知邮箱</string>
+    <string name="high_lights_prompt">一句话描述职位的吸引力</string>
+    <string name="position_desc_prompt">岗位职责\n
+        1、xxxx\n
+        2、xxxx\n
+        3、xxxx\n
+        任职要求\n
+        1、xxxx\n
+        2、xxxx\n
+        3、xxxx</string>
+    <string name="locating_city">定位城市</string>
+
+    <!-- my publish -->
+    <string name="my_publish_empty">没有发布的职位</string>
+    <string name="my_publish_refresh">刷新</string>
+    <string name="my_publish_edit">编辑</string>
+    <string name="my_publish_share">分享</string>
+    <string name="my_publish_all_comments">查看全部评论回复</string>
+    <string name="my_publish_comments_ans">回复</string>
+    <string name="my_publish_open">开启</string>
+    <string name="published_re_edittv">请输入信息</string>
+    <string name="my_publish_audition">面试通知</string>
+    <string name="published_position_str">我发布的职位</string>
+    
+
+    <!-- select resume -->
+    <string name="undisposed">未处理(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="interest">感兴趣(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="inappropriate">不合适(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="please_complete">请完善</string>
+    <string name="please_complete_multi_select">请完善, 可多选</string>
+    <string name="please_complete_salary">建议完善, 单位为K</string>
+    <string name="please_complete_salary2">请完善, 单位为K</string>
+    <string name="please_complete_intent_pos">添加意向岗位, 可多选</string>
+    <string name="selected_pos_str">已选意向岗位 </string>
+    <string name="one_fifth">/3</string>
+    <string name="action_interest">感兴趣</string>
+    <string name="action_interview">约面试</string>
+    <string name="action_chat">聊一聊</string>
+    <string name="applied_position">应聘职位</string>
+    <string name="nick_guide">[匿名]</string>
+    <string name="self_introduce_str">自我介绍</string>
+    <string name="popwindow_undispose">未处理</string>
+    <string name="popwindow_all">&#160;全部&#160;</string>
+    <string name="popwindow_contacted">已联系</string>
+    <string name="candidate_already_disposed">简历已全部处理</string>
+	<string name="candidate_has_nocard">没有简历</string>
+    
+    <!-- 候选人名片联系状态-->
+    <string name="status_0_33cc33">未读</string>
+    <string name="status_1_cccccc">已读</string>
+    <string name="status_2_2cc0eb">感兴趣</string>
+    <string name="status_3_2cc0eb">已联系</string>
+    <string name="status_4_2cc0eb">面试邀请已发送</string>
+    <string name="status_5_ff9999">对方已接受面试邀请, 面试时间:  <xliff:g>%1$s</xliff:g></string>
+    <string name="status_6_cccccc">对方已忽略面试邀请</string>
+    
+    
+    <!-- main_recruit 3 tabs -->
+
+    <string name="main_tab_recruit">机会</string>
+    <string name="main_tab_chat">消息</string>
+    <string name="main_tab_person">我</string>
+
+    <!-- post resume -->
+    <string name="post_resume">投递简历</string>
+    <string name="post_resume_complete_baseinfo">完善基本信息</string>
+    <string name="post_resume_complete_realhead">真实头像</string>
+    <string name="post_resume_complete_realname">真实姓名</string>
+    <string name="post_resume_complete_nickname">昵称</string>
+    <string name="post_resume_complete_gender">性别</string>
+    <string name="post_resume_complete_age">年龄</string>
+    <string name="post_resume_complete_exp">工作经验</string>
+    <string name="post_resume_complete_city">所在地</string>
+    <string name="post_resume_complete_email">邮箱</string>
+    <string name="post_resume_complete_mobile">手机号</string>
+    <string name="post_resume_one_word">一句话推荐自己</string>
+    <string name="post_resume_remember">记住</string>
+    <string name="post_resume_confirm">简历预览</string>
+    <string name="post_resume_complete_tips">请完善本页所有信息,这些信息将受到隐私保护,并仅出现在您的真实简历中</string>
+    <string name="post_resume_alpost">已投递</string>
+    <string name="post_resume_anonymous">投递匿名简历</string>
+    <string name="post_resume_realname">投递实名简历</string>
+    <string name="post_resume_email_tips">电子邮箱格式不正确</string>
+
+    <!-- 工作经历 -->
+    <string name="register_jobexp_complete">完善工作经历</string>
+    <string name="register_jobexp_add">新增工作经历</string>
+    <string name="register_jobexp_edit">修改工作经历</string>
+    <string name="register_jobexp_on_toadd">继续添加工作经历</string>
+    <string name="register_jobexp_company">公司简称</string>
+    <string name="register_jobexp_name">职位名称</string>
+    <string name="register_jobexp_time">起止年月</string>
+    <string name="register_jobexp_salary">月薪</string>
+    <string name="register_jobexp_desc">工作描述</string>
+    <string name="register_job_experience_message">工作经历未添加完整，是否继续添加？</string>
+
+    <!-- 教育经历 -->
+    <string name="register_edu_str">教育经历</string>
+    <string name="register_edu_complete">完善教育经历</string>
+    <string name="register_edu_add">新增教育经历</string>
+    <string name="register_edu_edit">修改教育经历</string>
+    <string name="register_edu_on_toadd">继续添教育经历</string>
+    <string name="register_edu_degree">学历</string>
+    <string name="register_edu_school">学校</string>
+    <string name="register_edu_major">专业</string>
+    <string name="register_edu_time">在校年月</string>
+    <string name="register_edu_choose_degree">选择学历</string>
+    <string name="register_edu_fill_school">填写学校</string>
+    <string name="register_edu_fill_major">填写专业</string>
+    <string name="register_edu_school_menu">所在学校</string>
+    <string name="register_edu_school_time_menu">在校年月</string>
+
+    <!-- 我的信息 -->
+    <string name="personal_contacts">联系人</string>
+    <string name="personal_group">我的群组</string>
+    <string name="personal_apply_position">我投递的职位</string>
+    <string name="personal_recruit">我要招人</string>
+    <string name="personal_setting">设置</string>
+    <string name="personal_logout">退出登录</string>
+	<string name="personal_sign">发布自我推荐</string>
+	
+	
+    <!-- 招聘服务 -->
+    <string name="recruit_service">招聘服务设置</string>
+    <string name="recruit_service_open">开通招聘服务</string>
+    <string name="recruit_service_tips">完善招聘方信息后,方可发布招聘信息</string>
+    <string name="recruit_service_setting">招聘方信息设置</string>
+    <string name="recruit_service_publish">发布职位</string>
+    <string name="recruit_service_my_published">我发布的职位</string>
+    <string name="recruit_service_tips2">完善信息</string>
+    <string name="recruit_service_tips3">开通招聘服务需要先完善相关个人信息与公司信息</string>
+    <string name="recruit_service_tips4">确认关闭招聘服务?</string>
+    <string name="recruit_service_tips5">请先选择一段工作经历作为你发布招聘信息时的身份</string>
+    <string name="recruit_add_expr">以新的职场身份发布招聘信息</string>
+    <string name="recruit_service_select_recruit">选择招聘身份</string>
+
+    <!-- 招聘方信息设置 -->
+    <string name="recruit_service_setting_title">招聘方信息设置</string>
+    <string name="recruit_service_setting_corp_email">我的招聘身份</string> <!-- 企业邮箱</string> -->
+    <string name="recruit_service_setting_corp_detail">企业详细信息</string>
+    <string name="recruit_service_setting_corp_dest">招聘动机</string>
+    <string name="recruit_service_setting_corp_dest1">我为公司招人</string>
+    <string name="recruit_service_setting_corp_email_tips">重新发送验证邮件</string>
+    <string name="recruit_service_setting_corp_email_tips2">收不到邮件</string>
+    <string name="recruit_service_setting_corp_email_tips3">您的邮箱<xliff:g id="email">%1$s</xliff:g>还未通过邮箱验证，请先验证邮箱</string>
+    <string name="recruit_service_setting_corp_detail_tips1">企业详情未完善，将不能发布职位，请先完善</string>
+    <string name="recruit_service_setting_corp_detail_tips2">重置招聘方信息将删除你目前的招聘身份，重新选择招聘身份，并且已发布的职位将被关闭</string>
+    <string name="recruit_service_setting_corp_detail_tips3">当前信息会覆盖原有信息, 需要重新验证邮件，已向您的邮箱发送邮件验证信息</string>
+
+    <!-- 技能标签 -->
+    <string name="personal_tech_tag">技能标签</string>
+    <string name="personal_tech_my_tag">我的技能标签</string>
+    <string name="personal_tech_more_tag">更多技能标签</string>
+
+    <!-- 其他人名片 -->
+    <string name="other_profile_title">个人资料</string>
+    <string name="other_profile_hide_str">用户设置了隐私保护</string>
+    <string name="other_profile_age"><xliff:g id="number">%1$d</xliff:g>岁</string>
+
+    <!-- 匿名名片 -->
+    <string name="ano_card">匿名名片</string>
+    <string name="ano_card_send_invite">发送职位邀请</string>
+    <string name="ano_card_skills">技能</string>
+    <string name="ano_card_no_name">没有昵称</string>
+
+    <!-- 我投递的职位 -->
+    <string name="applied_positions_str">我投递的职位</string>
+    <string name="applied_position_tips">共<xliff:g id="number">%1$d</xliff:g>人投递, HR已读<xliff:g id="number">%2$d</xliff:g>人</string>
+    <string name="applied_empty">暂无投递的职位</string>
+
+    <!-- 群聊天 -->
+    <string name="group_senders">我的投递群</string>
+    <string name="group_contacts">我的兴趣群</string>
+    <string name="group_setting_quit">退出该群</string>
+    <string name="group_setting_type_1001">投递群</string>
+    <string name="group_setting_type_2001">兴趣群</string>
+    <string name="group_setting_type_2001_max"><xliff:g id="number">%1$d</xliff:g> / 200</string>
+    <string name="modify_real_avatar_str">点击修改\n实名头像</string>
+    <string name="modify_annoy_avatar_str">点击修改\n匿名头像</string>
+    <string name="gong_str">共</string>
+    <string name="post_prompt">人投递</string>
+    <string name="open_position">已开启</string>
+    <string name="close_position">已关闭</string>
+    <string name="candidate_storage">候选人接收箱</string>
+    <string name="candidate_storage_undisposed">候选人接收箱-未处理</string>
+    <string name="candidate_storage_all">候选人接收箱-全部</string>
+    <string name="candidate_storage_contacted">候选人接收箱-已联系</string>
+    <string name="undisposed_candidate">未处理</string>
+    <string name="all_candidate">全部</string>
+    <string name="all_can">全部(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="contact_can">已联系(<xliff:g id="number">%1$d</xliff:g>)</string>
+    <string name="contact_candidate">已联系</string>
+    <string name="pull_to_refresh_pull_label">下拉</string>
+    <string name="pull_to_refresh_release_label">释放刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中…</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+    <!-- handler msg time -->
+    <string name="msg_time_pattern_fivemins">刚刚</string>
+    <string name="msg_time_pattern_today">HH:mm</string>
+    <string name="msg_time_pattern_yesterday">昨天 HH:mm</string>
+    <string name="msg_time_pattern_onemoreday">前天 HH:mm</string>
+    <string name="msg_time_pattern_inoneweek">EEEE</string>
+    <string name="msg_time_pattern_outoneweek">yyyy-MM-dd</string>
+    <string name="time_picker_increment_minute_button" msgid="8865885114028614321">"增大分钟值"</string>
+    <string name="time_picker_decrement_minute_button" msgid="6246834937080684791">"减小分钟值"</string>
+    <string name="time_picker_increment_hour_button" msgid="3652056055810223139">"增大小时值"</string>
+    <string name="time_picker_decrement_hour_button" msgid="1377479863429214792">"减小小时值"</string>
+    <string name="time_picker_increment_set_pm_button" msgid="4147590696151230863">"设置下午时间"</string>
+    <string name="time_picker_decrement_set_am_button" msgid="8302140353539486752">"设置上午时间"</string>
+
+    <!-- audition -->
+    <string name="audition_position">岗位</string>
+    <string name="audition_corp">公司</string>
+    <string name="audition_date">面试日期</string>
+    <string name="audition_time">面试时间</string>
+    <string name="audition_location">面试地点</string>
+    <string name="audition_hr">联系人</string>
+    <string name="audition_mobile">联系电话</string>
+    <string name="audition_email">联系邮箱</string>
+    <string name="audition_addition">附加信息(选填)</string>
+    <string name="audition_send">发送</string>
+    <string name="audition_invite">发送面试邀请</string>
+    <string name="audition_tips"><xliff:g id="name">%1$s</xliff:g>未完善</string>
+
+    <!-- unit -->
+    <string name="general_people_num"><xliff:g id="number">%1$d</xliff:g>人</string>
+    <string name="general_people_age"><xliff:g id="number">%1$d</xliff:g>岁</string>
+    <string name="general_second"><xliff:g id="number">%1$d</xliff:g>秒</string>
+
+    <!-- 企业名片 -->
+    <string name="corp_info">公司信息</string>
+    <string name="corp_card">企业名片</string>
+    <string name="corp_introduce">企业介绍</string>
+    <string name="corp_all_position">全部职位</string>
+    <string name="corp_industry">行业: <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="corp_type">类型: <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="corp_scale">规模: <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="corp_city">城市: <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="corp_homepage">主页: <xliff:g id="name">%1$s</xliff:g></string>
+
+    <!-- published card str -->
+
+    <string name="select_resume_position">职位：</string>
+    <string name="select_resume_expr">经验：</string>
+    <string name="select_resume_degree">学历：</string>
+    <string name="select_resume_location">城市：</string>
+    <string name="select_resume_oneword">自我推荐：</string>
+    <string name="positioning_prompt">在招职位名称</string>
+    <string name="apply_time_str">发送时间</string>
+    <string name="not_add_intention_str">请完善求职意向</string>
+    <string name="not_add_job_experience_str">请添加工作经历</string>
+    <string name="not_add_edu_bg_str">请添加教育经历</string>
+    <string name="not_add_skills_str">请添加技能标签</string>
+    <string name="not_add_str">未完善</string>
+    <string name="profile_card_str">个人名片</string>
+    <string name="real_profile_card_str">实名卡片</string>
+    <string name="nick_profile_card_str">匿名卡片</string>
+    <string name="position_card_str">职位邀约</string>
+    <string name="interview_card_str">面试邀请</string>
+    <string name="read_str">已读</string>
+
+    <!-- chat listview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- date dialog -->
+    <string name="date_dialog">日期选择对话框</string>
+    <string name="date_dialog_tonow">至今</string>
+    <string name="date_dialog_year"><xliff:g id="year">%1$d</xliff:g>年</string>
+    <string name="date_dialog_month"><xliff:g id="month">%1$d</xliff:g>月</string>
+    <string name="date_dialog_none">--</string>
+
+    <!-- other info -->
+    <string name="twcode_scanner">二维码扫描</string>
+    <string name="twcode_scanner_tips">请扫描<xliff:g id="website">%1$s</xliff:g>网页右上角的二维码</string>
+    <string name="new_message_reminder">新增投递提醒</string>
+    <string name="stranger_message">陌生人消息</string>
+    <string name="job_recommend">职位推荐</string>
+    <string name="group_recommend">群推荐</string>
+
+    <!-- 发布职位 -->
+    <string name="publish_position">创建职位信息</string>
+    <string name="publish_update_position">编辑职位信息</string>
+    <string name="publish_position_name">职位名称</string>
+    <string name="publish_position_salary">薪资</string>
+    <string name="publish_position_recruit_num">招聘人数</string>
+    <string name="publish_position_city">所在城市</string>
+    <string name="publish_position_experience">工作经验</string>
+    <string name="publish_position_degree">学历要求</string>
+    <string name="publish_position_lights">职位诱惑</string>
+    <string name="publish_position_desc">职位描述</string>
+    <string name="publish_position_email">通知邮箱</string>
+    <string name="publish_position_lights_desc">一句话描述职位的吸引</string>
+    <string name="publish_position_desc_advice">建议分别填写岗位和任职</string>
+    <string name="publish_position_recruit_num_tips">若干</string>
+
+    <!-- 消息 -->
+    <string name="msg_chat_profile_card">个人名片</string>
+    <string name="msg_chat_invitation">职位邀请</string>
+    <string name="msg_chat_summary">职位摘要</string>
+    <string name="msg_chat_audition">面试邀请</string>
+    <string name="msg_chat_handle_1">发起投递</string>
+    <string name="msg_chat_handle_2">感兴趣</string>
+    <string name="msg_chat_handle_3">忽略邀请</string>
+    <string name="msg_chat_handle_4">接受邀请</string>
+    <string name="msg_chat_handle_5">忽略邀请</string>
+
+    <!-- 面试卡片 -->
+    <string name="msg_chat_audition_time">面试时间:</string>
+    <string name="msg_chat_audition_locate">面试地点:</string>
+    <string name="msg_chat_audition_contacts">联系人:</string>
+    <string name="msg_chat_audition_mobile">联系电话:</string>
+    <string name="msg_chat_audition_email">联系邮箱:</string>
+    <string name="msg_chat_audition_desc">附言:</string>
+
+    <!-- 陌生人收件箱 -->
+    <string name="stranger_msg_s"><xliff:g id="name">%1$s</xliff:g> <xliff:g id="position">%2$s</xliff:g></string>
+    <string name="stranger_msg_s3">回复:</string>
+    <string name="stranger_msg_greeting">跟你打了一个招呼</string>
+    <string name="stranger_msg_greeting_reply">回应了你的招呼</string>
+    <string name="stranger_msg_invite">请求加你为好友</string>
+    <string name="stranger_msg_accept">已同意</string>
+    <string name="stranger_msg_refuse">已拒绝</string>
+    <string name="stranger_msg_invitation">加好友</string>
+    <string name="stranger_msg_answer">回复</string>
+    <string name="stranger_msg_alanswer">已回复</string>
+    <string name="stranger_msg_greet">打招呼</string>
+    <string name="stranger_msg_find">查看</string>
+    <string name="stranger_msg_empty">暂无陌生人消息</string>
+
+    <!-- 群聊 -->
+    <string name="group_chat_first_reedit">修改昵称</string>
+    <string name="group_chat_first_rechoose">修改头像</string>
+    <string name="group_chat_first_goon">进入</string>
+    <string name="group_chat_setting">群资料</string>
+    <string name="group_chat_members">群成员</string>
+    <string name="group_chat_close">消息免打扰</string>
+    <string name="group_chat_member_card">群名片</string>
+    <string name="group_chat_rec">群推荐</string>
+    <string name="click_look_str">点击查看</string>
+    <string name="group_chat_first_tips">该群为投递了相同职位用户的匿名讨论群，群内使用昵称和匿名头像，不会暴露您的隐私，请放心交流。</string>
+    <string name="delete_this_person">拉黑此人?</string>
+    <string name="officier_str">举报</string>
+    <string name="general_post">提交</string>
+    <string name="select_report_prompt">请选择举报的原因</string>
+    <string name="added_info_str">补充说明</string>
+
+    <!-- 设置 -->
+    <string name="mobile_modify_str">修改手机号</string>
+    <string name="password_modify_str">修改密码</string>
+    <string name="password_old_pword">旧密码</string>
+    <string name="input_old_password">请输入旧密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_renew_password">请重复新密码</string>
+    <string name="input_setting_password">请设置新密码</string>
+    <string name="forget_password_str">忘记密码</string>
+    <string name="mobile_verify_str">重置密码</string>
+    <string name="verify_code">验证码</string>
+    <string name="input_password">请设置登录密码</string>
+    <string name="input_phone_verify_code">请输入手机验证码</string>
+    <string name="head_count">招聘<xliff:g id="number">%1$d</xliff:g>人</string>
+    
+    <!-- 发职位和我要自荐 -->
+    <string name="find_chance_publish_position">发职位</string>
+    <string name="find_person_self_recommended">我要自荐</string>
+    
+    <!-- 搜索 -->
+    <string name="search_position_text">搜职位</string>
+    <string name="search_talent_text">搜人才</string>
+    <string name="search_city">地区</string>
+    <string name="search_expr">经验</string>
+    <string name="search_salary">月薪</string>
+    <string name="search_edu">学历</string>
+    <string name="search_job_state">求职心态</string>
+    <string name="industry_classification">行业分类:</string>
+    <string name="talent_classification">职业分类:</string>
+    <string name="hot_position">热门职位:</string>
+    <string name="no_matched_str">未搜到匹配的职位</string>
+    <string name="no_matched_talent">未搜到匹配的人才</string>
+    <string name="left_quotation">“</string>
+    <string name="right_quotation">”</string>
+    
+    <!-- 城市 -->
+    <string name="search_city_beijing">北京</string>
+    <string name="search_city_shanghai">上海</string>
+    <string name="search_city_guangzhou">广州</string>
+    <string name="search_city_shenzhen">深圳</string>
+    
+    <!-- 经验 -->
+    <string name="search_expr_13expr">1-3年工作经验</string>
+    <string name="search_expr_35expr">3-5年工作经验</string>
+    
+    <!-- 工资 -->
+    <string name="search_salary_below_10K">1K-10K</string>
+    <string name="search_salary_10K_15K">10K-15K</string>
+
+</resources>

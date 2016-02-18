@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/my_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/message_list_bg" >
+
+        <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+            android:id="@+id/my_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/bg_light_gray"
+            app:riv_border_width="1px"
+            app:riv_corner_radius="2dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/my_avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/my_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_5dp"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <TextView
+                android:id="@+id/my_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_black_666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/right_jump_desc"
+            android:paddingLeft="10dp"
+            android:src="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corners"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/my_contact_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/message_list_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/my_contact_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:padding="10dp"
+                android:src="@drawable/me_contact" />
+
+            <TextView
+                android:id="@+id/my_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/my_contact_icon"
+                android:text="@string/personal_contacts"
+                android:textSize="@dimen/text_size_17sp" />
+            
+            <TextView
+                    android:id="@+id/main_tab_person_tips"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/my_contact"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_tag_circle"
+                    android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:paddingLeft="10dp"
+                android:src="@drawable/common_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/message_list_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/my_group_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:padding="10dp"
+                android:src="@drawable/me_group" />
+
+            <TextView
+                android:id="@+id/my_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/my_group_icon"
+                android:text="@string/personal_group"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:paddingLeft="10dp"
+                android:src="@drawable/common_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corners"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/my_applied_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/message_list_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/my_applied_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:padding="10dp"
+                android:src="@drawable/me_applied" />
+
+            <TextView
+                android:id="@+id/my_applied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/my_applied_icon"
+                android:text="@string/personal_apply_position"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:paddingLeft="10dp"
+                android:src="@drawable/common_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_recruit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/message_list_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <ImageView
+                android:id="@+id/my_recruit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:padding="10dp"
+                android:src="@drawable/me_recruit" />
+
+            <TextView
+                android:id="@+id/my_recruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/my_recruit_icon"
+                android:text="@string/personal_recruit"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/right_jump_desc"
+                android:paddingLeft="10dp"
+                android:src="@drawable/common_arrow" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/message_list_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/my_setting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/right_jump_desc"
+            android:padding="10dp"
+            android:src="@drawable/me_setting" />
+
+        <TextView
+            android:id="@+id/my_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/my_setting_icon"
+            android:text="@string/personal_setting"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/right_jump_desc"
+            android:paddingLeft="10dp"
+            android:src="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/quit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/layout_margin_20dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/quit"
+            style="@style/CommonTextViewStyle"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_logout" />
+    </RelativeLayout>
+
+</LinearLayout>

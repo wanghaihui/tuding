@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/form_item_bg"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/phoneCodeTextId"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="7dip"
+                android:singleLine="true"
+                android:text="15878952587"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <include
+                android:layout_width="@dimen/border_weight"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                layout="@layout/vertical_line" />
+
+            <FrameLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/count_down_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/font_label" />
+
+                <Button
+                    android:id="@+id/count_down_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:text="@string/retry_send"
+                    android:textColor="@color/green"
+                    android:visibility="invisible" >
+                </Button>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_dynamic_bg"
+            android:padding="15dip" >
+
+            <EditText
+                android:id="@+id/verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:hint="@string/input_phone_verify_code"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/verify_code"
+                android:textSize="@dimen/font_large" >
+            </TextView>
+        </RelativeLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_dynamic_bg"
+            android:padding="15dip" >
+
+            <EditText
+                android:id="@+id/password_setting_pword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:hint="@string/input_new_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/password_setting_pword_pmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/password_setting_pword"
+                android:textSize="@dimen/font_large" >
+            </TextView>
+        </RelativeLayout>
+
+        <include layout="@layout/bottom_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_dynamic_bg"
+            android:padding="15dip" >
+
+            <EditText
+                android:id="@+id/password_setting_pword_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:hint="@string/input_new_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/password_setting_pword_confirm_pmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/password_setting_pword_confirm"
+                android:textSize="@dimen/font_large" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

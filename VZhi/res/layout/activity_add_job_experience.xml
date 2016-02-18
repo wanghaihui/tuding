@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:id="@+id/add_job_experience_layout_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/user_job_company_section_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                custom:itemTextLeftTitle="@string/register_jobexp_company" />
+
+            <include layout="@layout/form_item_bootom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/user_job_name_section_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                custom:itemTextLeftTitle="@string/register_jobexp_name" />
+
+            <include layout="@layout/form_item_bootom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/user_job_time_section_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                custom:itemTextLeftTitle="@string/register_jobexp_time" />
+
+            <include layout="@layout/form_item_bootom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/user_job_desc_section_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                custom:itemTextLeftTitle="@string/register_jobexp_salary" />
+
+            <include layout="@layout/form_item_bootom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/user_job_salary_section_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                custom:itemTextLeftTitle="@string/register_jobexp_desc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" >
+
+                <com.xiaobukuaipao.vzhi.view.UserProfileTipView
+                    android:id="@+id/check_education_custom_selection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    custom:userTip1="@string/user_guide_job_experience_tip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/common_btn_id"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <include layout="@layout/common_button" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

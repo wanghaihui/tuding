@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/group_baseinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/join_in"
+            android:background="@color/white" >
+
+            <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                android:id="@+id/group_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_launcher"
+                app:riv_border_color="@color/bg_light_gray"
+                app:riv_border_width="1dp"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/group_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/general_color_1A2138"
+                android:textSize="@dimen/text_size_20sp" />
+
+            <TextView
+                android:id="@+id/group_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/group_name"
+                android:layout_below="@+id/group_name"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="10/100"
+                android:textColor="@color/font_black_999"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/group_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/group_mark"
+                android:layout_below="@+id/group_mark"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/font_black_999" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/join_in"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corners_fill_blue"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/general_tips_joinin"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/general_color_cccccc" />
+
+</LinearLayout>

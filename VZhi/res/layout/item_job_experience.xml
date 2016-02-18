@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:displayArrow="true" />
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/bottom_line" />
+
+</LinearLayout>

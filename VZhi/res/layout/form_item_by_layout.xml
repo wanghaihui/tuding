@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/form_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/form_item_view_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="left|center_vertical"
+            android:maxWidth="200.0dp"
+            android:minWidth="50.0dp"
+            android:singleLine="true"
+            android:textColor="@color/font_label"
+            android:textSize="@dimen/font_user_set" />
+
+        <TextView
+            android:id="@+id/user_setting_item_view_content"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="10.0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:gravity="right"
+            android:hint="@string/general_tips_add"
+            android:singleLine="true"
+            android:textColor="@color/general_color_1A2138"
+            android:textColorHint="@color/general_color_999999"
+            android:textSize="@dimen/font_user_label" />
+
+        <com.xiaobukuaipao.vzhi.widget.A5EditText
+            android:id="@+id/user_setting_item_view_edit"
+            style="@style/CommonTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="@dimen/font_user_label"
+            android:visibility="gone"
+            app:isChild="true" />
+
+        <CheckBox
+            android:id="@+id/user_setting_item_view_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:button="@drawable/check_box_blue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        layout="@layout/bottom_line"
+        android:visibility="gone" />
+
+</LinearLayout>

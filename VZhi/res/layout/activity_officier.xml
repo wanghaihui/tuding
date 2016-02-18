@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/menu_bar_others" />
+
+    <TextView
+        android:id="@+id/report_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_report_prompt"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/officier_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_prompt"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:listSelector="@drawable/bg_layout_selector" />
+
+    <TextView
+        android:id="@+id/added_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/officier_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/added_info_str"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/adding_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/added_info"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="40dp" >
+
+        <EditText
+            android:id="@+id/adding_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_guide"
+            android:gravity="top"
+            android:maxLength="150"
+            android:minLines="5"
+            android:padding="7dp"
+            android:textColor="@color/font_label"
+            android:textColorHint="@color/font_tips"
+            android:textSize="@dimen/font_top_title" />
+    </LinearLayout>
+
+</RelativeLayout>

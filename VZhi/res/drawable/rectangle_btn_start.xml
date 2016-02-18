@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <!-- shape如果不声明形状则默认为正方形 -->
+		<shape android:shape="rectangle">
+            <corners android:radius="2.0dp" />
+            <!-- 圆角，你也可以对不同的角设置不同的数值 -->
+            <solid android:color="#CC2CC0EB" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="false">
+        <!-- shape如果不声明形状则默认为正方形 -->
+		<shape android:shape="rectangle">
+            <corners android:radius="2.0dp" />
+            <!-- 圆角，你也可以对不同的角设置不同的数值 -->
+            <solid android:color="@color/base_interface_color" />
+        </shape>
+     </item>
+</selector>

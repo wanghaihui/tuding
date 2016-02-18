@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/group_chat_first_tips"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/popup_show"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_corners_gray"
+        android:orientation="vertical" >
+
+        <com.xiaobukuaipao.vzhi.view.RoundedImageView
+            android:id="@+id/popup_avatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/general_user_avatar"
+            app:riv_border_color="@color/bg_pink"
+            app:riv_border_width="0px"
+            app:riv_oval="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66666666" />
+
+        <EditText
+            android:id="@+id/popup_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/font_black_666"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popup_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!-- 占位防止布局混乱 -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/popup_rechoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_for_profile"
+            android:text="@string/group_chat_first_rechoose"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/popup_reedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_for_profile"
+            android:text="@string/group_chat_first_reedit"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/popup_go_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_fill_55aadb"
+            android:text="@string/group_chat_first_goon"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popup_rechoose_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/popup_base_takephoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_corners_for_profile"
+            android:text="@string/register_takephoto" />
+
+        <Button
+            android:id="@+id/popup_base_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_for_profile"
+            android:text="@string/register_imgs" />
+
+        <Button
+            android:id="@+id/popup_base_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_for_profile"
+            android:text="@string/register_avatar" />
+
+        <Button
+            android:id="@+id/popup_base_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_corners_for_profile_selected"
+            android:text="@string/btn_back"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

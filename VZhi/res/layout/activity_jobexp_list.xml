@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_corners"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp" >
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/register_jobexp_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:centerTip="@string/general_tips_add"
+                    app:itemTextLeftTitle="@string/register_jobexp_company" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/register_jobexp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:centerTip="@string/general_tips_add"
+                    app:itemTextLeftTitle="@string/register_jobexp_name" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/register_jobexp_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:centerTip="@string/general_tips_add"
+                    app:displayArrow="false"
+                    app:itemTextLeftTitle="@string/register_jobexp_time" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/register_jobexp_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:displayArrow="false"
+                    app:leftLabel="@string/register_jobexp_salary"
+               		app:rightTip="@string/please_complete_salary"  />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/register_jobexp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:centerTip="@string/general_tips_advice"
+                    app:itemTextLeftTitle="@string/register_jobexp_desc" />
+            </LinearLayout>
+
+            <!-- 已经添加的工作经历 -->
+
+            <LinearLayout
+                android:id="@+id/register_jobexp_already_add_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/vertical_lines"
+                    android:orientation="horizontal"
+                    android:text="@string/general_tips_aladd"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.xiaobukuaipao.vzhi.view.ListViewForScrollView
+                    android:id="@+id/register_jobexp_already_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:background="@drawable/bg_corners"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="1px"
+                    android:listSelector="@drawable/bg_layout_selector"
+                    android:orientation="vertical"
+                    android:paddingBottom="1px"
+                    android:paddingTop="1px" />
+
+                <TextView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:background="@drawable/bg_corners"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/general_tips_empty"
+                    android:textColor="@color/font_black_666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

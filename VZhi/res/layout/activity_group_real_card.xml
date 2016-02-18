@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        layout="@layout/menu_bar_others" />
+
+    <ScrollView
+        android:id="@+id/real_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/real_card_bottom"
+        android:layout_below="@+id/menu_bar"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 个人基本信息 -->
+
+            <RelativeLayout
+                android:id="@+id/group_real_baseinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5eb" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+                    android:id="@+id/real_card_avatar"
+                    android:layout_width="@dimen/ano_card_95dp"
+                    android:layout_height="@dimen/ano_card_95dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/image_view"
+                    android:padding="@dimen/ano_card_10dp"
+                    android:src="@drawable/general_user_avatar"
+                    app:riv_border_color="@color/bg_light_gray"
+                    app:riv_border_width="1px"
+                    app:riv_corner_radius="2dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <LinearLayout
+                    android:id="@+id/blur_bg_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/real_card_avatar"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/ano_card_5dp"
+                    android:paddingTop="@dimen/ano_card_5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/real_card_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/real_card_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ano_card_3dp"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/text_size_18sp" />
+
+                        <TextView
+                            android:id="@+id/real_card_basicinfo_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/ano_card_10dp"
+                            android:background="@drawable/bg_corners_fill_blue"
+                            android:paddingLeft="@dimen/ano_card_2dp"
+                            android:paddingRight="@dimen/ano_card_2dp"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/real_card_basicinfo_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/ano_card_5dp"
+                            android:background="@drawable/bg_corners_fill_blue"
+                            android:paddingLeft="@dimen/ano_card_2dp"
+                            android:paddingRight="@dimen/ano_card_2dp"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/real_card_basicinfo_expr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/ano_card_5dp"
+                            android:background="@drawable/bg_corners_fill_blue"
+                            android:paddingLeft="@dimen/ano_card_2dp"
+                            android:paddingRight="@dimen/ano_card_2dp"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/real_card_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1a2138"
+                        android:textSize="@dimen/text_size_22sp" />
+
+                    <TextView
+                        android:id="@+id/real_card_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/ano_card_3dp"
+                        android:paddingTop="@dimen/ano_card_3dp"
+                        android:textColor="@color/font_black_666"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_msg_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_layout_selector"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_chat_close"
+                    android:textColor="@color/general_color_1A2138"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <com.xiaobukuaipao.vzhi.view.CheckBox
+                    android:id="@+id/group_msg_setting_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/check_box_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/real_card_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_common_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_weight"
+            android:background="@color/general_color_999999" />
+
+        <LinearLayout
+            android:id="@+id/real_card_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/layout_margin_3dp"
+            android:paddingRight="@dimen/layout_margin_3dp"
+            android:paddingTop="3dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/action_greet"
+                style="@style/tab_bottom_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/hi_stranger_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/action_greet_str" />
+
+            <TextView
+                android:id="@+id/action_question"
+                style="@style/tab_bottom_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_ask_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/action_question_str" />
+
+            <TextView
+                android:id="@+id/action_friend"
+                style="@style/tab_bottom_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_mk_friend_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/action_friend_str" />
+
+            <TextView
+                android:id="@+id/action_report"
+                style="@style/tab_bottom_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_report_selector"
+                android:gravity="center_horizontal"
+                android:text="@string/action_report_str" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/real_card_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:background="@drawable/bg_corners"
+            android:baselineAligned="false"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/layout_margin_3dp"
+            android:paddingRight="@dimen/layout_margin_3dp"
+            android:paddingTop="3dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/action_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/main_tab_chat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/action_chat"
+                    android:textColor="@color/tv_tab_selector"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action_unbind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/icon_unbuddy_selector"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/action_unbind"
+                    android:textColor="@color/tv_tab_selector"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_question_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_weight"
+            android:background="@color/general_color_999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/action_question_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_guide"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:padding="6dp"
+                android:singleLine="false"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/action_question_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_corners_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/general_send"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

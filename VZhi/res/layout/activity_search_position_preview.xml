@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="@color/base_interface_color"
+	    android:gravity="center_vertical"
+	    android:focusableInTouchMode="true" >
+		
+	    <FrameLayout
+	        android:id="@+id/menu_bar_back_btn_layout"
+	        android:layout_width="@dimen/action_common_height"
+	        android:layout_height="@dimen/action_common_height"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="left|center"
+	        android:background="@drawable/btn_return_bg_selector"
+	        android:gravity="center"
+	        android:includeFontPadding="false"  >
+	
+	        
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:contentDescription="@string/image_view"
+	            android:src="@drawable/btn_return_img_selector" />
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/menu_bar_search_btn_layout"
+	        android:layout_width="55dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:background="@drawable/btn_return_bg_selector"
+	        android:gravity="center"
+	        android:includeFontPadding="false"  >
+		
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="@string/general_search"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/text_size_16sp" />
+	    </FrameLayout>
+	    
+	    <com.xiaobukuaipao.vzhi.view.EditTextWithDel android:id="@+id/search_position_edit"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/menu_bar_back_btn_layout"
+	        android:layout_toLeftOf="@id/menu_bar_search_btn_layout"
+	        android:padding="5dp"
+	        android:drawablePadding="5dp"
+	        android:layout_centerInParent="true"
+            android:hint="@string/search_position_text"
+            android:singleLine="true"
+            android:textSize="16sp"
+	        android:background="@drawable/rectangle_circle_corner"
+	        android:imeOptions="actionSearch" >
+	        
+	    </com.xiaobukuaipao.vzhi.view.EditTextWithDel>
+	    
+	</RelativeLayout>
+	
+   <LinearLayout android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" >
+	    
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="16dp"
+           android:text="@string/industry_classification"
+           android:textSize="@dimen/text_size_16sp"
+           android:textColor="@color/general_color_333333" >
+           
+       </TextView>
+       
+       <com.xiaobukuaipao.vzhi.view.NestedGridView android:id="@+id/search_industries"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="16dp"
+           android:horizontalSpacing="16dp"
+           android:verticalSpacing="16dp"
+           android:numColumns="3" >
+           
+       </com.xiaobukuaipao.vzhi.view.NestedGridView>
+       
+   </LinearLayout>
+    
+   <TextView android:id="@+id/hot_city_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginBottom="16dp"
+       android:text="@string/hot_position"
+       android:textSize="@dimen/text_size_16sp"
+       android:textColor="@color/general_color_333333"
+       android:visibility="gone" />
+       
+   <com.xiaobukuaipao.vzhi.view.NestedGridView android:id="@+id/suggested_position"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="16dp"
+           android:horizontalSpacing="16dp"
+           android:verticalSpacing="16dp"
+           android:numColumns="3" >
+	</com.xiaobukuaipao.vzhi.view.NestedGridView>
+       
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/general_color_cccccc" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/strangers_2dp"
+            android:padding="2dp"
+            android:textColor="@color/general_color_a3a3a3"
+            android:textSize="@dimen/text_size_12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/question_is_replied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/general_color_999999"
+            android:visibility="gone" />
+
+        <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+            android:id="@+id/stranger_avatar"
+            android:layout_width="@dimen/strangers_45dp"
+            android:layout_height="@dimen/strangers_45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/question_is_replied"
+            android:layout_marginBottom="@dimen/strangers_7dp"
+            android:layout_marginLeft="@dimen/strangers_10dp"
+            android:layout_marginRight="@dimen/strangers_7dp"
+            android:layout_marginTop="@dimen/strangers_3dp"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop"
+            android:src="@drawable/general_user_avatar"
+            app:riv_border_width="0px"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stranger_avatar"
+            android:layout_toLeftOf="@+id/stranget_back_layout"
+            android:layout_toRightOf="@id/stranger_avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/stranger_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/stranger_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/strangers_3dp"
+                android:textColor="@color/general_color_888888"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/stranger_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/strangers_2dp"
+                android:textColor="@color/general_color_888888"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/stranget_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/strangers_5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/stranger_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_view"
+                android:gravity="center"
+                android:paddingBottom="@dimen/strangers_5dp"
+                android:paddingTop="@dimen/strangers_5dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

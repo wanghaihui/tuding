@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="VTheme" parent="AppTheme">
+         <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="jobinfo_city_edu_exp">?attr/jobinfo_city_edu_exp</item>
+    </style>
+
+    <style name="VTheme.Stantard" parent="VTheme">
+        <item name="jobinfo_city_edu_exp">@style/JobinfoCityEduExp</item>
+    </style>
+
+    <style name="JobinfoCityEduExp">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:background">@drawable/layer_list_jobinfo</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_marginLeft">-1px</item>
+    </style>
+
+    <style name="ProfileTitle">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/other_profile_20dp</item>
+        <item name="android:paddingRight">@dimen/other_profile_20dp</item>
+        <item name="android:paddingTop">@dimen/other_profile_7dp</item>
+        <item name="android:paddingBottom">@dimen/other_profile_7dp</item>
+        <item name="android:background">@color/general_color_F2F2F2</item>
+    </style>
+
+    <style name="ProfileEditBtn">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+</resources>

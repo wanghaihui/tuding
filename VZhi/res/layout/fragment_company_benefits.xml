@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/general_back_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="300dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corp_edit_benefits_tips"
+                    android:textColor="@color/general_color_666666"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_add_tag_gridview_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+
+                <com.xiaobukuaipao.vzhi.view.NestedGridView
+                    android:id="@+id/profile_add_tag_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dip"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_add_tag_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_profile_tag_10dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <com.xiaobukuaipao.vzhi.widget.A5EditText
+                android:id="@+id/profile_add_tag_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/person_profile_tag_20dp"
+                android:layout_marginRight="@dimen/person_profile_tag_20dp"
+                android:layout_weight="1"
+                android:background="@drawable/textfield_grey"
+                android:drawableLeft="@drawable/general_search"
+                android:hint="@string/corp_edit_benefits_hint"
+                android:inputType="textNoSuggestions"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/profile_add_tag_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_corners_button_blue"
+                android:text="@string/general_tips_toadd"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.xiaobukuaipao.vzhi.view.NestedListView
+            android:id="@+id/profile_tag_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@android:color/transparent"
+            android:listSelector="@drawable/bg_layout_selector"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+</ScrollView>

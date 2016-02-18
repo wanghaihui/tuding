@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/register_avatar_m"
+                android:textColor="@color/font_gray" />
+
+            <com.xiaobukuaipao.vzhi.view.NestedGridView
+                android:id="@+id/baseinfo_grid_avatar_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/bg_corners"
+                android:columnWidth="80dp"
+                android:numColumns="auto_fit"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/register_avatar_f"
+                android:textColor="@color/font_gray" />
+
+            <com.xiaobukuaipao.vzhi.view.NestedGridView
+                android:id="@+id/baseinfo_grid_avatar_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/bg_corners"
+                android:columnWidth="80dp"
+                android:numColumns="auto_fit"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

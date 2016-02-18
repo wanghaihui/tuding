@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_login_bg" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_50dp"
+        android:contentDescription="@string/image_view"
+        android:src="@drawable/default_logo" />
+
+    <LinearLayout
+        android:id="@+id/mobile_pawd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="@dimen/layout_margin_10dp"
+        android:layout_marginRight="@dimen/layout_margin_10dp"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:background="@drawable/rectangle_circle_corner"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/login_phone" />
+
+            <EditText
+                android:id="@+id/mobile_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_mobile_number"
+                android:inputType="number"
+                android:textColorHint="@color/general_color_cccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_margin_50dp"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="@dimen/layout_margin_10dp"
+            android:background="@color/divider_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin_10dp"
+            android:layout_marginTop="@dimen/layout_margin_10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/pswd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_input_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/general_color_cccccc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/mobile_pawd_layout"
+        android:layout_marginLeft="@dimen/layout_margin_10dp"
+        android:layout_marginRight="@dimen/layout_margin_10dp"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:background="@drawable/rectangle_btn_start"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18sp" />
+
+    <TextView
+        android:id="@+id/reset_pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login_btn"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="@dimen/layout_margin_10dp"
+        android:text="@string/setting_forget_password_tips"
+        android:textColor="@color/base_interface_color" />
+
+    <LinearLayout
+        android:id="@+id/platformBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_btn_start"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/look_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_btn_looklook"
+            android:gravity="center"
+            android:text="@string/have_a_look"
+            android:textColor="@color/base_interface_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

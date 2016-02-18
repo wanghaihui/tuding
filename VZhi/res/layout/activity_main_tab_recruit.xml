@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/intention_guide"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white" >
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/general_tips_intention_guide"
+            android:textSize="@dimen/text_size_12sp" />
+        
+        <ImageButton
+            android:id="@+id/job_objective_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:contentDescription="@string/image_view"
+            android:src="@drawable/general_edit" />
+        
+    </RelativeLayout>
+	
+    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+        android:id="@+id/recruitMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/border_weight" 
+        android:listSelector="@android:color/transparent" />
+    
+    <!-- 
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rotate_header_list_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/general_back_color"
+            android:transcriptMode="alwaysScroll"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7" >
+			
+            <ListView
+                android:id="@+id/recruitMessageList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                android:transcriptMode="alwaysScroll" />
+            
+<<<<<<< HEAD
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+     -->
+    <RelativeLayout
+        android:id="@+id/empty1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/image_view"
+            android:src="@drawable/empty" />
+    </RelativeLayout>
+    
+</LinearLayout>

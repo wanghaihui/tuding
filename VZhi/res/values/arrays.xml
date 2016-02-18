@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="date">
+        <item>北京</item>
+        <item>深圳</item>
+        <item>上海</item>
+        <item>鞍山</item>
+        <item>沈阳</item>
+        <item>广州</item>
+        <item>岳阳</item>
+        <item>长沙</item>
+        <item>石家庄</item>
+        <item>重庆</item>
+        <item>成都</item>
+        <item>吉林</item>
+        <item>长春</item>
+        <item>哈尔滨</item>
+        <item>长白山</item>
+        <item>济南</item>
+        <item>青海</item>
+        <item>拉萨</item>
+        <item>齐齐哈尔</item>
+        <item>海拉尔</item>
+        <item>南京</item>
+        <item>杭州</item>
+        <item>无锡</item>
+        <item>苏州</item>
+        <item>昆山</item>
+        <item>吉首</item>
+        <item>大连</item>
+        <item>昆明</item>
+    </string-array>
+    <string-array name="hot_cities">
+        <item>全部</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>杭州</item>
+        <item>深圳</item>
+        <item>成都</item>
+        <item>厦门</item>
+        <item>大连</item>
+        <item>西安</item>
+        <item>沈阳</item>
+    </string-array>
+    <string-array name="residents">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+    <string-array name="long_click_action">
+        <item>编辑</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="time_picker_minute">
+        <item>00</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="group_name">
+        <item>@string/group_senders</item>
+        <item>@string/group_contacts</item>
+    </string-array>
+    
+    <string-array name="message_list_menu">
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="search_hot_cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>杭州</item>
+        <item>武汉</item>
+        <item>珠海</item>
+        <item>成都</item>
+        <item>全部</item>
+    </string-array>
+</resources>

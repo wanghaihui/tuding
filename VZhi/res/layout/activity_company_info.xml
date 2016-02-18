@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_corners"
+            android:orientation="vertical"
+            android:paddingBottom="1dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="1dp" >
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/company_info_ltd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:centerTip="@string/general_tips_add"
+                app:itemTextLeftTitle="@string/company_info_ltd" />
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/company_info_position"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:centerTip="@string/general_tips_add"
+                app:itemTextLeftTitle="@string/company_info_position" />
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/company_info_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:centerTip="@string/general_tips_add"
+                app:displayArrow="false"
+                app:itemTextLeftTitle="@string/company_info_time" />
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/company_info_desc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:centerTip="@string/general_tips_advice"
+                app:itemTextLeftTitle="@string/register_jobexp_desc" />
+        </LinearLayout>
+
+        <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+            android:id="@+id/company_info_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:leftLabel="@string/company_info_email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/company_info_email_tips1"
+            android:textColor="@color/general_color_999999" />
+
+        <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+            android:id="@+id/company_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:centerTip="@string/general_tips_add"
+            app:itemTextLeftTitle="@string/company_info_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/company_info_name_tips1"
+            android:textColor="@color/general_color_999999" />
+    </LinearLayout>
+
+</LinearLayout>

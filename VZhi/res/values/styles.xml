@@ -1,0 +1,216 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CommonTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:layout_marginLeft">@dimen/person_profile_20dp</item>
+        <item name="android:layout_marginRight">@dimen/person_profile_20dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ItemLineTheme">
+        <item name="@android:layout_width">fill_parent</item>
+        <item name="@android:layout_height">0.5dp</item>
+        <item name="android:background">@color/info_line</item>
+    </style>
+
+    <style name="A1_Font">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <!-- <item name="android:shadowColor">@color/semi_transparent</item> -->
+        <!-- <item name="android:shadowDy">-1.0</item> -->
+        <!-- <item name="android:shadowRadius">0.2</item> -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="tab_bottom_text">
+        <item name="android:textSize">@dimen/tab_common_size</item>
+        <item name="android:textColor">@color/tv_tab_selector</item>
+    </style>
+    <!-- CalendarView Style -->
+    <style name="Widget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="Widget.CalendarView">
+        <item name="cv_showWeekNumber">true</item>
+        <item name="cv_firstDayOfWeek">1</item>
+        <item name="cv_minDate">01/01/1900</item>
+        <item name="cv_maxDate">12/31/2100</item>
+        <item name="cv_shownWeekCount">6</item>
+        <item name="cv_selectedWeekBackgroundColor">#330099FF</item>
+        <item name="cv_focusedMonthDateColor">#FFFFFFFF</item>
+        <item name="cv_unfocusedMonthDateColor">#66FFFFFF</item>
+        <item name="cv_weekNumberColor">#33FFFFFF</item>
+        <item name="cv_weekSeparatorLineColor">#19FFFFFF</item>
+        <item name="cv_selectedDateVerticalBar">@drawable/day_picker_week_view_dayline_holo</item>
+        <item name="cv_weekDayTextAppearance">@style/TextAppearance.Small.CalendarViewWeekDayView</item>
+        <item name="cv_dateTextAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="Widget.Holo.CalendarView" parent="Widget.CalendarView">
+        <item name="cv_selectedWeekBackgroundColor">#330099FF</item>
+        <item name="cv_focusedMonthDateColor">#FFFFFFFF</item>
+        <item name="cv_unfocusedMonthDateColor">#66FFFFFF</item>
+        <item name="cv_weekNumberColor">#33FFFFFF</item>
+        <item name="cv_weekSeparatorLineColor">#19FFFFFF</item>
+        <item name="cv_selectedDateVerticalBar">@drawable/day_picker_week_view_dayline_holo</item>
+        <item name="cv_weekDayTextAppearance">@style/TextAppearance.Holo.CalendarViewWeekDayView</item>
+        <item name="cv_dividerHorizontal">@drawable/list_divider_holo_dark</item>
+    </style>
+
+    <style name="Widget.Holo.Light.CalendarView" parent="Widget.CalendarView">
+        <item name="cv_selectedWeekBackgroundColor">#330066ff</item>
+        <item name="cv_focusedMonthDateColor">#FF000000</item>
+        <item name="cv_unfocusedMonthDateColor">#7F08002B</item>
+        <item name="cv_weekNumberColor">#7F080021</item>
+        <item name="cv_weekSeparatorLineColor">#7F08002A</item>
+        <item name="cv_weekDayTextAppearance">@style/TextAppearance.Holo.Light.CalendarViewWeekDayView</item>
+        <item name="cv_dividerHorizontal">@drawable/list_divider_holo_light</item>
+    </style>
+
+    <style name="TextAppearance.Small.CalendarViewWeekDayView" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Holo.CalendarViewWeekDayView" parent="TextAppearance.Small.CalendarViewWeekDayView">
+        <item name="android:textColor">#505050</item>
+    </style>
+
+    <style name="TextAppearance.Holo.Light.CalendarViewWeekDayView" parent="TextAppearance.Small.CalendarViewWeekDayView"></style>
+
+    <!-- DatePicker Style -->
+    <style name="Theme.Dialog.Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- item name="android:windowTitleStyle">@android:style/DialogWindowTitle</item -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.DatePicker">
+        <item name="dp_internalLayout">@layout/date_picker_holo</item>
+        <item name="dp_calendarViewShown">false</item>
+    </style>
+
+    <style name="Widget.Holo.DatePicker" parent="Widget.DatePicker">
+        <item name="dp_internalLayout">@layout/date_picker_holo</item>
+        <item name="dp_calendarViewShown">true</item>
+    </style>
+
+    <style name="Widget.Holo.Light.DatePicker" parent="Widget.Holo.DatePicker">
+        <item name="dp_internalLayout">@layout/date_picker_holo</item>
+    </style>
+
+    <style name="dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="material_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Swipe Fling -->
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <item name="min_adapter_stack">6</item>
+        <item name="max_visible">3</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <!-- Action Bar -->
+    <style name="XBKPActionBarTheme" parent="@style/Theme.AppCompat.Light" >
+        <!-- Support library compatibility -->
+        <item name="android:actionBarStyle">@style/XBKPActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@style/XBKPActionButtonOverflow</item>
+        
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/XBKPActionBar</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/XBKPActionButtonOverflow</item>
+    </style>
+    
+    <!-- general styles for the action bar -->
+    <style name="XBKPActionBar" parent="@style/Widget.AppCompat.ActionBar" >
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/base_interface_color</item>
+        <item name="android:backgroundStacked">@color/base_interface_color</item>
+        <item name="android:backgroundSplit">@color/base_interface_color</item>
+        
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@color/base_interface_color</item>
+        <item name="backgroundStacked">@color/base_interface_color</item>
+        <item name="backgroundSplit">@color/base_interface_color</item>
+    </style>
+    
+    <!-- action bar title text -->
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" >
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <!-- action bar tab text -->
+    <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText" >
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="XBKPActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">  
+        <item name="android:src">@drawable/candidate_more</item>  
+    </style>
+
+</resources>

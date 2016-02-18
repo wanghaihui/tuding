@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        layout="@layout/menu_bar_others" />
+
+    <ScrollView
+        android:id="@+id/anonymou_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_bar"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 个人基本信息 -->
+
+           <RelativeLayout
+                android:id="@+id/person_ano_baseinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#22000099" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+                    android:id="@+id/ano_card_avatar"
+                    android:layout_width="@dimen/ano_card_95dp"
+                    android:layout_height="@dimen/ano_card_95dp"
+                    android:layout_alignParentLeft="true"
+                    android:contentDescription="@string/image_view"
+                    android:padding="@dimen/ano_card_10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/general_user_avatar"
+                    app:riv_border_color="@color/bg_light_gray"
+                    app:riv_border_width="1px"
+                    app:riv_corner_radius="2dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false" />
+
+                <LinearLayout
+                    android:id="@+id/blur_bg_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/ano_card_avatar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/ano_card_5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ano_card_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/ano_card_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ano_card_3dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_17sp" />
+
+                        <TextView
+                            android:id="@+id/ano_card_basicinfo_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/ano_card_10dp"
+                            android:background="@drawable/bg_corners_fill_blue"
+                            android:paddingLeft="@dimen/ano_card_2dp"
+                            android:paddingRight="@dimen/ano_card_2dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/ano_card_basicinfo_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/ano_card_5dp"
+                            android:background="@drawable/bg_corners_fill_blue"
+                            android:paddingLeft="@dimen/ano_card_2dp"
+                            android:paddingRight="@dimen/ano_card_2dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ano_card_position_expr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ano_card_5dp"
+                        android:textColor="@color/general_color_888888"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/ano_card_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ano_card_5dp"
+                        android:paddingBottom="@dimen/ano_card_3dp"
+                        android:textColor="@color/general_color_888888"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/image_view"
+                    android:src="@drawable/ano_card_arc_tag" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_msg_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_layout_selector"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/black_person"
+                    android:textColor="@color/general_color_1A2138"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <com.xiaobukuaipao.vzhi.view.CheckBox
+                    android:id="@+id/group_msg_setting_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/check_box_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize" >
+
+    <RelativeLayout
+        android:id="@+id/chat_menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/base_interface_color"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <TextView
+            android:id="@+id/ivTitleName"
+            style="@style/A1_Font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:singleLine="true" />
+
+        <FrameLayout
+            android:id="@+id/menu_bar_back_btn_layout"
+            android:layout_width="@dimen/action_common_height"
+            android:layout_height="@dimen/action_common_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:background="@drawable/btn_return_bg_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/btn_return_img_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+        android:id="@+id/rec_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

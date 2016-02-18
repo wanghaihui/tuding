@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 
+    <TextView
+        android:id="@+id/beijing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow_layout_selector"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/search_city_beijing"
+        android:textColor="@color/general_color_333333"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_weight"
+        android:background="@color/general_color_e4e4e4" />
+	 -->
+	 
+	 <ListView android:id="@+id/city_list_view"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@color/bottom_bar_back_color"
+        android:divider="@color/white"
+        android:dividerHeight="1px" >
+	 </ListView>
+	 
+</LinearLayout>

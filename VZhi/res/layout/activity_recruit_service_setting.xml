@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/menu_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/recruit_service_setting_corp_email"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+            android:id="@+id/corp_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:displayArrow="true"
+            app:rightMoreLeft="true" />
+
+        <LinearLayout
+            android:id="@+id/email_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/email_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="@string/recruit_service_setting_corp_email_tips"
+                android:textColor="@color/general_color_blue" />
+
+            <TextView
+                android:id="@+id/email_not_recieve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/recruit_service_setting_corp_email_tips2"
+                android:textColor="@color/general_color_blue" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/recruit_service_setting_corp_detail"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+            android:id="@+id/corp_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:displayArrow="true"
+            app:rightMoreLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/recruit_service_setting_corp_dest"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone" />
+
+        <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+            android:id="@+id/corp_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            app:dispCbox="true"
+            app:dispTip="false"
+            app:displayArrow="false"
+            app:leftLabel="@string/recruit_service_setting_corp_dest1" />
+    </LinearLayout>
+
+</LinearLayout>

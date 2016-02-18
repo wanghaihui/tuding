@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/general_back_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/baseinfo_user_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="30dp" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                    android:id="@+id/baseinfo_user_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    app:riv_border_width="0dp" />
+
+                <ImageView
+                    android:id="@+id/icon_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@+id/baseinfo_user_head"
+                    android:layout_alignRight="@+id/baseinfo_user_head"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/avatar_plus" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:background="@drawable/bg_corners"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp" >
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/baseinfo_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:displayArrow="false"
+                    app:leftLabel="@string/register_nickname"
+                    app:rightTip="@string/general_tips_add" />
+
+                <RelativeLayout
+                    android:id="@+id/baseinfo_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:id="@+id/info_gender_title"
+                        style="@style/CommonTextViewStyle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/layout_margin_20dp"
+                        android:textSize="22sp" />
+
+                    <com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup
+                        android:id="@+id/segment_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/layout_margin_20dp"
+                        android:checkedButton="@+id/button_one"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@id/button_one"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dip"
+                            android:minWidth="40dip"
+                            android:text="@string/gender_man"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/radio_colors" />
+
+                        <RadioButton
+                            android:id="@+id/button_two"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dip"
+                            android:minWidth="40dip"
+                            android:text="@string/gender_woman"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/radio_colors" />
+                    </com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup>
+                </RelativeLayout>
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/baseinfo_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:itemTextLeftTitle="@string/register_age" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/baseinfo_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:itemTextLeftTitle="@string/register_location" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

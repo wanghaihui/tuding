@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp" >
+
+    <!-- android:background="@drawable/general_dynamic_bg" -->
+
+    <TextView
+        android:id="@+id/info_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:minEms="3"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/general_color_666666" />
+
+    <TextView
+        android:id="@+id/info_input_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin_30dp"
+        android:layout_toRightOf="@+id/info_input_title" />
+
+
+    <com.xiaobukuaipao.vzhi.widget.A5EditText
+        android:id="@+id/info_input_edittv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin_30dp"
+		android:layout_toRightOf="@+id/info_input_title"
+        android:textSize="@dimen/text_size_16sp"
+        android:gravity="left"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/info_input_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/see_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

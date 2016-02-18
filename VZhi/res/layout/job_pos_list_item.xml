@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/candidate_margin_48dp"
+	android:background="@color/base_interface_color"
+	android:paddingLeft="@dimen/candidate_margin_25dp"
+	android:paddingRight="@dimen/candidate_margin_25dp"
+	android:descendantFocusability="blocksDescendants" >
+              
+    <TextView
+		android:id="@+id/job_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true" >
+    </TextView>
+    
+	<ImageView android:id="@+id/checked_marker"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:contentDescription="@string/right_jump_desc"
+	    android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/candidate_position_check" />
+</RelativeLayout>

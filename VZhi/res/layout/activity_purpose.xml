@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        layout="@layout/menu_bar" />
+
+    <RelativeLayout
+        android:id="@+id/purpose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_bar"
+        android:background="@color/general_back_color" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_corners"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="@dimen/layout_margin_20dp"
+                android:paddingRight="@dimen/layout_margin_20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hr_info_portrait"
+                    android:textSize="@dimen/font_large" >
+                </TextView>
+
+                <com.xiaobukuaipao.vzhi.view.RoundedImageView
+                    android:id="@+id/hr_info_protrait"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/general_user_avatar" />
+
+                <ImageView
+                    android:id="@+id/hr_icon_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/hr_info_protrait"
+                    android:layout_alignRight="@+id/hr_info_protrait"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/avatar_plus" />
+            </RelativeLayout>
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                android:id="@+id/hr_info_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftLabel="@string/hr_info_name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:layout_marginRight="@dimen/layout_margin_20dp" >
+
+                <TextView
+                    android:id="@+id/hr_info_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hr_info_gender"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup
+                    android:id="@+id/hr_segment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checkedButton="@+id/hr_button_one"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/hr_button_one"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="30dip"
+                        android:minWidth="40dip"
+                        android:text="@string/gender_man"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/radio_colors" />
+
+                    <RadioButton
+                        android:id="@+id/hr_button_two"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="30dip"
+                        android:minWidth="40dip"
+                        android:text="@string/gender_woman"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/radio_colors" />
+                </com.xiaobukuaipao.vzhi.widget.SegmentedRadioGroup>
+            </RelativeLayout>
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/hr_info_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:displayArrow="true"
+                app:itemTextLeftTitle="@string/register_age" />
+
+            <include layout="@layout/bottom_line" />
+
+            <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                android:id="@+id/hr_info_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:displayArrow="true"
+                app:itemTextLeftTitle="@string/register_location" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/purpose_up_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/purpose_down_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+</RelativeLayout>

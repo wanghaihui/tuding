@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_in_jobs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout_selector"
+    android:paddingLeft="@dimen/other_profile_20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/other_profile_20dp" >
+
+        <TextView
+            android:id="@+id/item_profile_in_job_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/item_profile_in_job_basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/other_profile_3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/general_color_666666"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/item_profile_in_job_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/other_profile_3dp"
+            android:ellipsize="end"
+            android:textColor="@color/general_color_666666"
+            android:textSize="@dimen/text_size_14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_profile_in_job_refresh_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/other_profile_10dp"
+        android:textColor="@color/general_color_888888"
+        android:textSize="@dimen/text_size_12sp" />
+
+</RelativeLayout>

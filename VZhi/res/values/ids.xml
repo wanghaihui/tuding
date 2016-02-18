@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Just adding these so I wont have to remove a lot of code from NumberPicker.java. -->
+    <item name="np__increment" type="id"/>
+    <item name="np__decrement" type="id"/>
+
+    <!-- 定义请求的标示符 -->
+    <item name="recruitListHttp" type="id"/>
+    <item name="positionInfoHttp" type="id"></item>
+    <item name="personalProfileHttp" type="id"></item>
+    <item name="gpsLocationHttp" type="id"></item>
+    <item name="registerVerifyHttp" type="id"></item>
+
+    <item name="position_get_award" type="id"></item>
+    <item name="award_shared_count" type="id"></item>
+    <!-- registerinfo -->
+    <item name="register_get_code" type="id"></item>
+    <item name="register_ver_code" type="id"></item>
+    <item name="register_set_iden" type="id"></item>
+    <item name="register_set_psw" type="id"></item>
+    <item name="register_set_base" type="id"></item>
+    <item name="register_get_avatar" type="id"></item>
+    <item name="register_upload_avatar" type="id"></item>
+    <item name="register_upload_realavatar" type="id"></item>
+    <item name="register_get_industry" type="id"></item>
+    <item name="register_get_corps" type="id"></item>
+    <item name="register_get_corp" type="id"></item>
+    <item name="register_set_corp" type="id"></item>
+    <item name="register_get_corp_position" type="id"></item>
+    <item name="register_get_corp_fullname" type="id"></item>
+    <item name="register_get_jobstates" type="id"></item>
+    <item name="register_get_intent_pos" type="id"></item>
+    <item name="register_set_intent_job" type="id"></item>
+    <item name="register_get_corp_type" type="id"></item>
+    <item name="register_get_intention_corp_type" type="id"></item>
+    <item name="register_get_corp_scale" type="id"></item>
+    <item name="register_get_corp_benifits" type="id"></item>
+    <item name="register_upload_corp_logo" type="id"></item>
+    <item name="register_get_degree" type="id"></item>
+    <item name="register_get_school" type="id"></item>
+    <item name="register_get_major" type="id"></item>
+    <item name="register_get_position" type="id"></item>
+    <item name="register_get_experiences" type="id"></item>
+    <item name="register_get_educations" type="id"></item>
+    <item name="register_get_basicinfo" type="id"></item>
+    <item name="register_set_hr_basicinfo" type="id"></item>
+    <item name="register_get_hr_basicinfo" type="id"></item>
+    <item name="register_check_hr_corp_email" type="id"></item>
+    <item name="register_get_email_corpsrecl" type="id"></item>
+    <item name="register_send_hr_verify_email" type="id"></item>
+    <item name="register_add_hr_register_workexp" type="id"></item>
+    <item name="register_set_hr_register_workexp" type="id"></item>
+    <item name="register_normal_login" type="id"></item>
+    <item name="register_fast_login" type="id"></item>
+    <item name="register_completion_get" type="id"></item>
+
+    <!-- post resume -->
+    <item name="post_resume_complete_status_get" type="id"></item>
+    <item name="post_resume_real_apply" type="id"></item>
+    <item name="post_resume_nick_apply" type="id"></item>
+
+    <!-- profile -->
+    <item name="profile_other_info" type="id"></item>
+    <item name="profile_basic_info" type="id"></item>
+    <item name="profile_basic_info_set" type="id"></item>
+    <item name="profile_workexpr_add" type="id"></item>
+    <item name="profile_workexpr_modify" type="id"></item>
+    <item name="profile_workexpr_delete" type="id"></item>
+    <item name="profile_edu_add" type="id"></item>
+    <item name="profile_edu_modify" type="id"></item>
+    <item name="profile_edu_delete" type="id"></item>
+    <item name="profile_mytag_set" type="id"></item>
+    <item name="profile_mytag_get" type="id"></item>
+    <item name="profile_tag_get" type="id"></item>
+    <item name="profile_position_posted" type="id"></item>
+    <item name="profile_sign_self" type="id"></item>
+     <item name="profile_sign_introduce" type="id"></item>
+    <!-- ano card -->
+    <item name="ano_card_get" type="id"></item>
+
+    
+    <!-- Positions -->
+    <item name="position_get_published_positions" type="id"></item>
+    <item name="position_refresh_published_positions" type="id"></item>
+    <item name="position_close_published_positions" type="id"></item>
+    <item name="position_open_published_positions" type="id"></item>
+    <item name="position_statistics_candidate" type="id"></item>
+    <item name="position_unread_candidate" type="id"></item>
+    <item name="position_detail" type="id"></item>
+    <item name="position_all_candidate" type="id"></item>
+    <item name="position_read_candidate" type="id"></item>
+    <item name="position_interest_candidate" type="id"></item>
+    <item name="position_contacted_candidate" type="id"></item>
+    <item name="position_create_position" type="id"></item>
+    <item name="position_update_position" type="id"></item>
+    <item name="position_get_edus" type="id"></item>
+    <item name="position_get_exprs" type="id"></item>
+    <item name="position_add_offencereport" type="id"></item>
+    <item name="get_suggested_position" type="id"></item>
+    <item name="get_search_job" type="id"></item>
+    <item name="get_search_talent" type="id"></item>
+    
+    <!-- social -->
+    <item name="social_buddy_list_get" type="id"></item>
+    <item name="social_stranger_send_greeting" type="id"></item>
+    <item name="social_stranger_send_question" type="id"></item>
+    <item name="social_stranger_answer_question" type="id"></item>
+    <item name="social_stranger_news_count" type="id"></item>
+    <item name="social_stranger_list" type="id"></item>
+    <item name="social_send_invitation" type="id"></item>
+    
+    <item name="social_stranger_buddy_accept" type="id"></item>
+    <item name="social_unbind_buddy" type="id"></item>
+    
+    <item name="socket_ip_and_port" type="id"></item>
+    <item name="social_get_dialog_id" type="id"></item>
+    <item name="social_send_text_message" type="id"></item>
+    <item name="social_send_real_profile_card" type="id"></item>
+    <item name="social_send_nick_profile_card" type="id"></item>
+    <item name="social_send_position_invitation" type="id"></item>
+    <item name="social_interest_job_invitation" type="id"></item>
+    <item name="social_uninterest_job_invitation" type="id"></item>
+    <item name="social_accept_interview_invitation" type="id"></item>
+    <item name="social_ignore_interview_invitation" type="id"></item>
+    <item name="social_candidate_chat" type="id"></item>
+    <item name="social_get_read_status" type="id"></item>
+    <item name="social_get_new_messages" type="id"></item>
+    <item name="social_get_old_messages" type="id"></item>
+    <item name="social_get_letter_summary" type="id"></item>
+    <item name="social_get_message_summary" type="id"></item>
+    <item name="social_get_person_avatar" type="id"></item>
+    <item name="social_get_group_avatar" type="id"></item>
+    <item name="social_get_new_group_messages" type="id"></item>
+    <item name="social_send_group_text" type="id"></item>
+    <item name="social_get_group_old_messages" type="id"></item>
+    <item name="social_get_group_recommend" type="id"></item>
+    <item name="social_get_group_person_avatar" type="id"></item>
+    <item name="social_get_position_recommend" type="id"></item>
+    
+    <item name="social_group_join" type="id"></item>
+    <item name="social_group_quit" type="id"></item>
+    <item name="social_group_block" type="id"></item>
+    <item name="social_group_unblock" type="id"></item>
+    <item name="social_group_get_info" type="id"></item>
+    <item name="social_group_get_real_list" type="id"></item>
+    <item name="social_group_get_nick_list" type="id"></item>
+    <item name="social_black_somebody" type="id"></item>
+    
+    <item name="social_logout" type="id"></item>
+    
+    <!-- hr setting -->
+    <item name="hr_setting_get_recruit_status" type="id"></item>
+    <item name="hr_setting_set_recruit_status" type="id"></item>
+    <item name="hr_get_interview_temp" type="id"></item>
+    <item name="hr_send_interview" type="id"></item>
+    <item name="hr_setting_reset_recruit_serivce_setting" type="id"></item>
+    
+    <!-- setting -->
+    <item name="setting_ver_code_for_mobile" type="id"></item>
+    <item name="setting_newmobile_set" type="id"></item>
+    <item name="setting_modify_pswd" type="id"></item>
+    <item name="setting_privacy_get" type="id"></item>
+    <item name="setting_privacy_contact_list_get" type="id"></item>
+    <item name="setting_privacy_profile_list_get" type="id"></item>
+    <item name="setting_privacy_contact_set" type="id"></item>
+    <item name="setting_privacy_profile_set" type="id"></item>
+    <item name="setting_hr_read_contact" type="id"></item>
+    <item name="setting_password_vercode_send" type="id"></item>
+    <item name="setting_password_set" type="id"></item>
+    <item name="setting_password_set_with_oldpswd" type="id"></item>
+    <item name="position_get_officier_report" type="id"></item>
+    <!--  -->
+    <item name="look_seekers_get" type="id"></item>
+    
+    <!-- id of parent panel -->
+    <item name="adp_parentPanel" type="id" />
+
+    <!-- ids of top panel -->
+    <item name="adp_topPanel" type="id" />
+    <item name="adp_titleDividerTop" type="id" />
+    <item name="adp_title_template" type="id" />
+    <item name="adp_icon" type="id" />
+    <item name="adp_alertTitle" type="id" />
+    <item name="adp_titleDivider" type="id" />
+
+    <!-- ids of content panel and its children -->
+    <item name="adp_contentPanel" type="id" />
+    <item name="adp_scrollView" type="id" />
+    <item name="adp_message" type="id" />
+    <item name="adp_textSpacerNoButtons" type="id" />
+
+    <!-- ids of custom panel and its children -->
+    <item name="adp_customPanel" type="id" />
+    <item name="adp_custom" type="id" />
+
+    <!-- ids of button panel and its children -->
+    <item name="adp_buttonPanel" type="id" />
+    <item name="adp_button1" type="id" />
+    <item name="adp_button2" type="id" />
+    <item name="adp_button3" type="id" />
+
+    <!-- id of dialog's listview -->
+    <item name="adp_select_dialog_listview" type="id" />
+
+    <!-- ids of progress dialog children -->
+    <item name="adp_progress" type="id" />
+    <item name="adp_progress_number" type="id" />
+    <item name="adp_progress_percent" type="id" />
+</resources>

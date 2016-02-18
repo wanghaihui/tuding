@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="15dip"
+	android:background="@drawable/general_dynamic_bg"
+	>
+              
+    <TextView
+        android:id="@+id/left_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/company_info_type"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true" >
+    </TextView>
+    
+    <EditText 
+       android:id="@+id/right_type"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="15dip"
+       android:inputType="none"
+         />
+    
+</RelativeLayout>

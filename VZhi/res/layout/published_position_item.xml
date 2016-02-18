@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.xiaobukuaipao.vzhi.view.Card
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/position_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/position_list_2dp"
+            android:background="@drawable/message_list_bg"
+            android:paddingLeft="@dimen/position_list_20dp"
+            android:paddingRight="@dimen/position_list_10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/position_list_5dp"
+                android:layout_marginTop="@dimen/position_list_5dp" >
+
+                <TextView
+                    android:id="@+id/published_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <TextView
+                    android:id="@+id/position_basic_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/published_position"
+                    android:layout_marginTop="@dimen/position_list_5dp"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/refresh_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/position_basic_info"
+                    android:layout_marginTop="@dimen/position_list_5dp"
+                    android:textColor="@color/general_color_cccccc" />
+
+                <ImageView
+                    android:layout_width="@dimen/position_list_15dp"
+                    android:layout_height="@dimen/position_list_15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/image_view"
+                    android:src="@drawable/common_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/posted_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/position_info_layout"
+            android:layout_marginTop="@dimen/position_list_5dp"
+            android:paddingBottom="@dimen/position_list_8dp"
+            android:paddingLeft="@dimen/position_list_25dp"
+            android:paddingRight="@dimen/position_list_10dp"
+            android:paddingTop="@dimen/position_list_8dp" >
+
+            <TextView
+                android:id="@+id/gong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/image_view"
+                android:text="@string/gong_str" />
+
+            <TextView
+                android:id="@+id/post_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gong" />
+
+            <TextView
+                android:id="@+id/post_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/post_num"
+                android:text="@string/post_prompt" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_weight"
+            android:layout_below="@id/posted_position"
+            android:layout_marginLeft="@dimen/position_list_10dp"
+            android:layout_marginRight="@dimen/position_list_10dp"
+            android:layout_marginTop="@dimen/position_list_5dp"
+            android:background="@color/divider_line_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider" >
+
+            <!--
+            <Button android:id="@+id/position_toggle" 
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/position_list_5dp"
+                android:src="@drawable/published_position_toggle"
+                android:contentDescription="@string/image_view" />
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/position_list_10dp"
+                android:layout_marginRight="@dimen/position_list_5dp"
+                android:layout_marginTop="@dimen/position_list_10dp"
+                android:paddingBottom="@dimen/position_list_10dp" >
+
+                <com.xiaobukuaipao.vzhi.view.DrawableCenterTextView
+                    android:id="@+id/refresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_list_bg"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/my_publish_refresh" />
+
+                <com.xiaobukuaipao.vzhi.view.DrawableCenterTextView
+                    android:id="@+id/edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_list_bg"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/my_publish_edit" />
+
+                <com.xiaobukuaipao.vzhi.view.DrawableCenterTextView
+                    android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_list_bg"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/my_publish_share" />
+
+                <com.xiaobukuaipao.vzhi.view.DrawableCenterTextView
+                    android:id="@+id/open_close"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_list_bg"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 遮罩View -->
+
+        <RelativeLayout
+            android:id="@+id/shade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+    </com.xiaobukuaipao.vzhi.view.Card>
+
+    <ImageView
+        android:id="@+id/published_pos_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/position_list_5dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/image_view" />
+
+    <TextView
+        android:id="@+id/unread_num"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/filled_circle"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:id="@+id/jobposition_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_bar"
+        layout="@layout/menu_bar" />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu_bar"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" >
+
+                <com.xiaobukuaipao.vzhi.view.RoundedNetworkImageView
+                    android:id="@+id/corp_logo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_corp_logo"
+                    app:riv_corner_radius="2dp"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/corp_logo"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/general_tips_tip_modify"
+                    android:textColor="@color/general_color_999999" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:displayArrow="false"
+                    app:displayCenter="false" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/corp_simple_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftLabel="@string/corp_edit_simple_name" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/corp_edit_type" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/corp_edit_industry" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_scale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/corp_edit_scale" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_benifits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_advice"
+                    app:itemTextLeftTitle="@string/corp_edit_benifits" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/corp_edit_location" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_location_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextLeftTitle="@string/corp_edit_location_detail" />
+
+                <include layout="@layout/bottom_line" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineLayout
+                    android:id="@+id/corp_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftLabel="@string/corp_edit_website"
+                    app:rightTip="@string/general_tips_advice" />
+
+                <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+                    android:id="@+id/corp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:centerTip="@string/general_tips_advice"
+                    app:itemTextLeftTitle="@string/corp_edit_desc" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

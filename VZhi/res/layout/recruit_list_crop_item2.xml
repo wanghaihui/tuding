@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recruit_publisher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/divider_corp_position"
+    android:layout_marginTop="3dp"
+    android:background="@color/white"
+    android:padding="@dimen/layout_margin_10dp" >
+
+    <com.xiaobukuaipao.vzhi.view.RoundedImageView
+        android:id="@+id/publisher_avatar"
+        android:layout_width="@dimen/layout_margin_40dp"
+        android:layout_height="@dimen/layout_margin_40dp"
+        android:layout_marginTop="@dimen/layout_margin_3dp"
+        android:scaleType="fitXY"
+        app:riv_border_color="@color/divider_line_gray"
+        app:riv_border_width="1px"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <RelativeLayout
+        android:id="@+id/publisher_corp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_10dp"
+        android:layout_toRightOf="@+id/publisher_avatar" >
+
+        <TextView
+            android:id="@+id/publisher_corpinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/publisher_refreshtime"
+            android:ellipsize="end"
+            android:textColor="@color/general_color_888888"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publisher_corpinfo"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/publisher_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_color_888888"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/publisher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base_interface_color"
+                android:textSize="@dimen/text_size_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publisher_refreshtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/layout_margin_3dp"
+            android:textColor="@color/general_color_a3a3a3"
+            android:textSize="@dimen/text_size_12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/publisher_corp_title"
+        android:layout_below="@+id/publisher_corp_title"
+        android:layout_marginTop="@dimen/layout_margin_3dp"
+        android:paddingBottom="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/publisher_job_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_layout_selector"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/poo_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/poo_job_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/general_gray_999999"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/poo_basic_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poo_job_title"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/general_color_888888"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/poo_high_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poo_basic_info"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.15"
+                android:maxLines="3"
+                android:textColor="@color/general_color_888888"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_pub_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_weight"
+            android:layout_below="@id/publisher_job_one"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="@dimen/layout_margin_5dp"
+            android:background="@color/divider_line_gray"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/publisher_job_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider_pub_1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_layout_selector"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/pot_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <TextView
+                android:id="@+id/pot_job_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/general_gray_999999"
+                android:textSize="@dimen/text_size_12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pot_basic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pot_job_title"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/general_color_888888" />
+
+            <TextView
+                android:id="@+id/pot_high_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pot_basic_info"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.15"
+                android:maxLines="3"
+                android:textColor="@color/general_color_888888" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_pub_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_weight"
+            android:layout_below="@id/publisher_job_two"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="@dimen/layout_margin_5dp"
+            android:background="@color/divider_line_gray"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/publisher_job_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider_pub_2"
+            android:layout_marginRight="@dimen/layout_margin_5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_layout_selector"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/potr_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <TextView
+                android:id="@+id/potr_job_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/general_gray_999999"
+                android:textSize="@dimen/text_size_12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/potr_basic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/potr_job_title"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/general_color_888888" />
+
+            <TextView
+                android:id="@+id/potr_high_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/potr_basic_info"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.15"
+                android:maxLines="3"
+                android:textColor="@color/general_color_888888" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

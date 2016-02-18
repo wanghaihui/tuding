@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/intent_margin_20dp"
+            android:layout_marginRight="@dimen/intent_margin_20dp"
+            android:layout_marginTop="@dimen/intent_margin_10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selected_pos_str"
+                android:textColor="@color/general_color_666666"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/selected_pos_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_color_FF9900"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one_fifth"
+                android:textColor="@color/general_color_666666"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/intent_margin_10dp"
+            android:layout_marginLeft="@dimen/intent_margin_20dp"
+            android:layout_marginRight="@dimen/intent_margin_20dp"
+            android:layout_marginTop="@dimen/intent_margin_5dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/intention_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:dividerHeight="@dimen/border_weight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intent_margin_10dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <com.xiaobukuaipao.vzhi.widget.A5EditText
+            android:id="@+id/job_intent_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/intent_margin_20dp"
+            android:layout_marginRight="@dimen/intent_margin_20dp"
+            android:background="@drawable/textfield_grey"
+            android:drawableLeft="@drawable/general_search"
+            android:hint="@string/general_search"
+            android:inputType="textNoSuggestions"
+            android:maxEms="25"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:id="@+id/intention_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/intent_margin_20dp"
+            android:layout_marginRight="@dimen/intent_margin_20dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

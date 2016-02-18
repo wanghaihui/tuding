@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/rectangle_circle_corner_cc338bcb" android:state_focused="true"/>
+    <item android:drawable="@drawable/rectangle_circle_corner_cc338bcb" android:state_selected="true"/>
+    <item android:drawable="@drawable/rectangle_circle_corner_cc338bcb" android:state_pressed="true"/>
+    <item android:drawable="@drawable/rectangle_circle_corner_338bcb" android:state_focused="false" android:state_pressed="false" android:state_selected="false"></item>
+
+</selector>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="calendarViewStyle">@style/Widget.Holo.Light.CalendarView</item>
+		<item name="datePickerStyle">@style/Widget.Holo.Light.DatePicker</item>
+		<item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+	</style>
+	
+</resources>

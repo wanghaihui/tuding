@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.xiaobukuaipao.vzhi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_back_color"
+    android:orientation="vertical" >
+
+    <com.xiaobukuaipao.vzhi.widget.FormItemByLineView
+        android:id="@+id/user_add_section_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        custom:itemTextLeftTitle="增加教育经历" />
+
+</LinearLayout>

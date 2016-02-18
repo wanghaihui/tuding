@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan" >
+
+    <include layout="@layout/menu_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.xiaobukuaipao.vzhi.widget.A5EditText
+            android:id="@+id/filter_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20dp"
+            android:layout_marginRight="@dimen/layout_margin_20dp"
+            android:layout_marginTop="@dimen/layout_margin_5dp"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:gravity="center"
+            android:hint="@string/general_search"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/layout_margin_5dp"
+            android:background="@color/general_back_color" />
+
+        <RelativeLayout
+            android:id="@+id/stranger_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_layout_selector" >
+
+            <ImageView
+                android:id="@+id/hi_stranger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin_20dp"
+                android:contentDescription="@string/image_view"
+                android:duplicateParentState="true"
+                android:src="@drawable/hi_stranger_pressed" />
+
+            <TextView
+                android:id="@+id/stranger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin_5dp"
+                android:layout_toRightOf="@+id/hi_stranger"
+                android:text="@string/stranger_str"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <TextView
+                android:id="@+id/stranger_num"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_margin_20dp"
+                android:background="@drawable/bg_tag_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/general_back_color"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_corners_black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:visibility="invisible" />
+
+            <com.xiaobukuaipao.vzhi.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

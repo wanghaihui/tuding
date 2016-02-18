@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="@color/base_interface_color"
+	    android:gravity="center_vertical"
+	    android:focusableInTouchMode="true" >
+		
+	    <FrameLayout
+	        android:id="@+id/menu_bar_back_btn_layout"
+	        android:layout_width="@dimen/action_common_height"
+	        android:layout_height="@dimen/action_common_height"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="left|center"
+	        android:background="@drawable/btn_return_bg_selector"
+	        android:gravity="center"
+	        android:includeFontPadding="false"  >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:contentDescription="@string/image_view"
+	            android:src="@drawable/btn_return_img_selector" />
+	    </FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/menu_bar_search_btn_layout"
+	        android:layout_width="55dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:background="@drawable/btn_return_bg_selector"
+	        android:gravity="center"
+	        android:includeFontPadding="false"  >
+		
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="@string/general_search"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/text_size_16sp" />
+	    </FrameLayout>
+	    
+	    <com.xiaobukuaipao.vzhi.view.EditTextWithDel android:id="@+id/search_talent_edit"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/menu_bar_back_btn_layout"
+	        android:layout_toLeftOf="@id/menu_bar_search_btn_layout"
+	        android:padding="5dp"
+	        android:drawablePadding="5dp"
+	        android:layout_centerInParent="true"
+            android:hint="@string/search_talent_text"
+            android:singleLine="true"
+            android:textSize="16sp"
+	        android:background="@drawable/rectangle_circle_corner"
+	        android:imeOptions="actionSearch" >
+	        
+	    </com.xiaobukuaipao.vzhi.view.EditTextWithDel>
+	    
+	</RelativeLayout>
+
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="48dp" >
+        
+        <TextView android:id="@+id/city_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="2dp"
+            android:drawableRight="@drawable/search_down"
+            android:text="@string/search_city"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_layout_selector" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+        
+        <TextView android:id="@+id/expr_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="2dp"
+            android:drawableRight="@drawable/search_down"
+            android:text="@string/search_expr"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_layout_selector" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+        
+        <TextView android:id="@+id/edu_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="2dp"
+            android:drawableRight="@drawable/search_down"
+            android:text="@string/search_edu"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_layout_selector" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+        
+        <TextView android:id="@+id/job_state_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="2dp"
+            android:drawableRight="@drawable/search_down"
+            
+            android:text="@string/search_job_state"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/bg_layout_selector" />
+            
+    </LinearLayout>
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/general_color_e4e4e4" />
+    
+    <RelativeLayout
+        android:id="@+id/not_matched_position"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_matched_talent"
+            android:textColor="@color/general_color_333333"
+            android:textSize="@dimen/text_size_16sp" />
+     </RelativeLayout>
+     
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+	    <com.xiaobukuaipao.vzhi.view.refresh.PullToRefreshListView
+	        android:id="@+id/search_talent_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:dividerHeight="@dimen/border_weight" 
+	        android:listSelector="@android:color/transparent" />
+	     
+	     <com.xiaobukuaipao.vzhi.view.ProgressBarCircularIndeterminate
+	        android:id="@+id/progressBarCircularIndeterminate"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:layout_centerInParent="true"
+	        android:background="#1E88E5"
+	        android:visibility="gone" />
+	     
+     </RelativeLayout>
+    
+</LinearLayout>
